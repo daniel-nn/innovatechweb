@@ -38,11 +38,8 @@ img {
 max-width: 100%;
 height: auto;
 }
-span, a, a:hover {
-display: inline-block;
-text-decoration: none;
-color: inherit;
-}
+
+
 .section-head {
 margin-bottom: 60px;
 }
@@ -64,7 +61,7 @@ width: 60px;
 height: 3px;
 background: #F57D00;
 position: absolute;
-left: 0px;
+left: -100px;
 bottom: -10px;
 right:0;  
 margin:0 auto;
@@ -111,9 +108,9 @@ font-weight: 700;
 color:#F57D00;
 }
 .item {
-background: #fff;
+background: #ffffff;
 text-align: center;
-padding: 30px 25px;
+padding: 15px;
 -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
 box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
 border-radius: 20px;
@@ -121,6 +118,7 @@ border:5px solid rgba(0, 0, 0, 0.07);
 margin-bottom: 30px;
 -webkit-transition: all .5s ease 0;
 transition: all .5s ease 0;
+height: 90%;
 transition: all 0.5s ease 0s;
 }
 .item:hover{
@@ -131,7 +129,7 @@ transition: all .5s ease 0;
 transition: all 0.5s ease 0s;
 }
 .item:hover .item, .item:hover span.icon{
-background:#fff;
+background:#e8e8e8;
 border-radius:10px;
 -webkit-transition: all .5s ease 0;
 transition: all .5s ease 0;
@@ -145,7 +143,7 @@ transition: all 0.5s ease 0s;
 }
 .item .icon {
 font-size: 40px;
-margin-bottom:25px;
+margin-bottom:15px;
 color: #F57D00;   
 width: 90px;
 height: 90px;
@@ -232,7 +230,7 @@ position: absolute;
 left: 0;
 top: 0;
 height: 100%;
-background: #f95819;
+background: #F57D00;
 width: 10%;
 border-radius: 10px;
 -webkit-transition: all 1s;
@@ -257,7 +255,6 @@ border-radius: 30px;
     width: 200px;
     height: 250px;
     border-radius: 20px;
-    background-image:url('https://img1.wsimg.com/isteam/ip/abcfa291-e671-41db-b8b6-51d856ec39b3/kristal.jpg/:/rs=w:1440,h:1440') ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -266,40 +263,12 @@ border-radius: 30px;
     cursor: pointer;
     transition: all .3s;
   }
+
+  
   
   .card_box:hover {
     transform: scale(0.9);
   }
   
-
-  .team-memberImg::before {
-    content: 'INNOVATECH';
-    position: absolute;
-    width: 150%;
-    height: 20px;
-    background-image: linear-gradient(45deg, #432104 0%, #cd7013  51%, #8f8381  100%);
-    transform: rotate(-45deg) translatex(-85px) translateY(-55px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #cfcdcc;
-    font-size: 10px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.23);
-  }
-  
-  .team-memberImg::after {
-    content: '';
-    position: absolute;
-    width: 10px;
-    bottom: 70px;
-    left: 0;
-    height: 13px;
-    z-index: -1;
-    box-shadow: 140px -140px #cc3f47;
-    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
-  }
 
  

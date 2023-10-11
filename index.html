@@ -13,7 +13,200 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css" id="main-styles-link">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <style>
+    .ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
+
+    /**********************
+/***** Services *******
+/*********************/
+
+/*PEN STYLES*/
+/*PEN STYLES*/
+
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+
+}
+.blog-card a {
+  color: inherit;
+}
+.blog-card a:hover {
+  color: #FF671F;
+}
+.blog-card:hover .photo {
+  transform: scale(1.3) rotate(3deg);
+}
+.blog-card .meta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.blog-card .photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+}
+.blog-card .details, .blog-card .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.blog-card .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.blog-card .details a {
+  text-decoration: dotted underline;
+}
+.blog-card .details ul li {
+  display: inline-block;
+}
+.blog-card .details .author:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f007";
+}
+.blog-card .details .date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f133";
+}
+.blog-card .details .tags ul:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  margin-right: 10px;
+}
+.blog-card .details .tags li {
+  margin-right: 2px;
+}
+.blog-card .details .tags li:first-child {
+  margin-left: -4px;
+}
+.blog-card .description {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.blog-card .description h1, .blog-card .description h2 {
+  font-family: Poppins, sans-serif;
+}
+.blog-card .description h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.blog-card .description h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.blog-card .description .read-more {
+  text-align: right;
+}
+.blog-card .description .read-more a {
+  color: #FF671F;
+  display: inline-block;
+  position: relative;
+}
+.blog-card .description .read-more a:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+.blog-card .description .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.blog-card p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+.blog-card p:first-of-type {
+  margin-top: 1.25rem;
+}
+.blog-card p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #FF671F;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.blog-card:hover .details {
+  left: 0%;
+}
+@media (min-width: 640px) {
+  .blog-card {
+    flex-direction: row;
+    max-width: 700px;
+  }
+  .blog-card .meta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .blog-card .description {
+    flex-basis: 60%;
+  }
+  .blog-card .description:before {
+    transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .blog-card.alt {
+    flex-direction: row-reverse;
+  }
+  .blog-card.alt .description:before {
+    left: inherit;
+    right: -10px;
+    transform: skew(3deg);
+  }
+  .blog-card.alt .details {
+    padding-left: 25px;
+  }  
+}
+
+    </style>
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -33,12 +226,12 @@
         <div class="rd-navbar-wrap" ">
           <nav style="background-color: rgba(245, 245, 245, 0.961);" class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-lg-stick-up-offset="118px" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-stick-up="true" data-xl-stick-up-offset="118px" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-stick-up-offset="118px" data-xxl-stick-up="true">
             <div class="rd-navbar-aside-outer">
-              <div class="rd-navbar-aside" style="height: 130px;  margin: 0;">
+              <div class="rd-navbar-aside" style="  padding: 0;">
                 <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel">
+                <div class="rd-navbar-panel" style="height: 130px;">
                   <!-- RD Navbar Toggle-->
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html"><img src="./images/innovatech-solutions (1).png" alt="" width="151" height="44" srcset="./images/innovatech-solutions (1).png"/></a>
+                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html" ><img style="width: 100%; height: 100%;" src="./images/innovatech-solutions (1).png" alt="" /></a>
                 </div>
                 <div class="rd-navbar-collapse">
                   <button class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle="#rd-navbar-collapse-content-1"><span></span></button>
@@ -60,35 +253,34 @@
                 </div>
               </div>
             </div>
-            <div class="rd-navbar-main-outer " style="background-color: #212121c6; height: 85px;">
-              <div class="rd-navbar-main">
-                <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
+            <div class="rd-navbar-main-outer " style="background-color: #212121c6; height: 65px;">
+              <div class="rd-navbar-main p-0" >
+                <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1" ">
                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav" >
-                    <li class="rd-nav-item active ov-btn-grow-skew"><a class="miNavbarLink" href="index.html">Home</a>
+                    <li class="rd-nav-item ov-btn-grow-skew active"><a class="miNavbarLink" href="index.html">Home</a>
                     </li>
                     <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink" href="about-us.html">About us</a>
                     </li>
-                    <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink" href="services-residenctial.html">Services</a>
+          
+                    <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink"  href="./support.html">Support</a>
                     </li>
-                    <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink"  href="contacts.html">Support</a>
+                   
+                    <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink"  href="contact.html">Contact</a>
                     </li>
-                    <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink" href="contacts.html">Portfolio</a>
-                    </li>
-                    <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink"  href="contacts.html">Contact</a>
-                    </li>
-                    <li class="rd-nav-item">
-                      <div class=" dropdown ">
-                        <button class=" btn dropdown-toggle bg-transparent sm:text-white dropdown_services" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  
+                      <li class="rd-nav-item ov-btn-grow-skew dropdown ">
+                        <button class="miNavbarLink btn dropdown-toggle bg-transparent sm:text-white dropdown_services" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           Services
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#">Residential Services</a>
-                          <a class="dropdown-item" href="#">Comercial Services</a>
-                          <a class="dropdown-item" href="#">Consulting & Advisoring</a>
+                          <a class="dropdown-item" href="/services-residenctial.html"><i class="fa fa-home" aria-hidden="true" style="font-style: normal; margin-right: 10px;"></i>Residential Services</a>
+                          <a class="dropdown-item" href="/services-commercial.html"> <i class="fa fa-building" aria-hidden="true" style="font-style: normal; margin-right: 10px;"></i>Comercial Services</a>
+                     
                         </div>
-                      </div>
-                    </li>
+                      </li>
+                      </li>
+                      <li class="rd-nav-item" style="margin-left: 20px;"><img class="icon-flag" style="width: 35px; margin-right: 15px;" src="images/usa.png" alt=""><img class="icon-flag" style="width: 35px;" src="images/spain.png" alt=""></li>
                   </ul>
                 </div>
               </div>
@@ -96,7 +288,10 @@
           </nav>
         </div>
       </header>
-      <section class="section swiper-container swiper-slider swiper-slider-minimal" data-loop="true" data-slide-effect="fade" data-autoplay="4759" data-simulate-touch="true">
+
+
+      
+<section class="section swiper-container swiper-slider swiper-slider-minimal" data-loop="true" data-slide-effect="fade" data-autoplay="4759" data-simulate-touch="true">
         <div class="swiper-wrapper">
           <div class="swiper-slide swiper-slide_video header" >
             <div class="container">
@@ -105,7 +300,7 @@
                   <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Welcome</div>
                 </div>
                 <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">We Are Innovatech</span></h1>
-                <p class="text-white wow-outer " style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">Count on us to bring the best automation solution for your home or business!
+                <p class="text-white wow-outer " style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">Leaders in technology solutions for your business or home<!-- Count on us to bring the best automation solution for your home or business! -->
                 </span></p>
                 <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#" data-wow-delay=".4s">View Services</a></div>
               </div>
@@ -117,7 +312,7 @@
                 <div class="wow-outer">
                   <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Cameras Installation</div>
                 </div>
-                <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">The best technology</span></h1>
+
                 <p class="text-white wow-outer"  style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">Secure your property or business with our security camera installation service to protect what matters most to you!</span></p>
                 <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#" data-wow-delay=".4s">View properties</a></div>
               </div>
@@ -127,10 +322,34 @@
             <div class="container">
               <div class="jumbotron-classic-content">
                 <div class="wow-outer">
+                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Whole Automation</div>
+                </div>
+              
+                <p class="text-white wow-outer"  style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">When it comes to automation we are the best, we fully automate your home, we also install access control, intercoms and high quality security systems.</span></p>
+                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#" data-wow-delay=".4s">View properties</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide header4" >
+            <div class="container">
+              <div class="jumbotron-classic-content">
+                <div class="wow-outer">
+                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Audiovisual Instalations</div>
+                </div>
+                
+                <p class="text-white wow-outer"  style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">At Innovatech Solutions we specialize in audiovisual integration. Our focus is on delivering top-notch products, smart designs, and exceptional customer service to our clients.</span></p>
+                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#" data-wow-delay=".4s">View properties</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide header5" >
+            <div class="container">
+              <div class="jumbotron-classic-content">
+                <div class="wow-outer">
                   <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">More Than 20 Years of</div>
                 </div>
                 <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">Experience</span></h1>
-                <p class="text-white wow-outer"  style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">Founded in 1989, our company is a team of renowned property management and real estate experts always ready to help you.</span></p>
+                <p class="text-white wow-outer"  style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">With more than 15 years of experience in the market, our company is a team of renowned experts in technological solutions and home automation.</span></p>
                 <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#" data-wow-delay=".4s">View properties</a></div>
               </div>
             </div>
@@ -139,453 +358,341 @@
         <div class="swiper-pagination-outer container">
           <div class="swiper-pagination swiper-pagination-modern swiper-pagination-marked" data-index-bullet="true"></div>
         </div>
-      </section>
+ </section>
 
       
 
 <!------ Include the above in your HEAD tag ---------->
-<section style="height: auto ;width: 80%; margin: 70px auto;">
+<section style="height: auto ;width: 100%; margin: 80px auto;">
   <div class="col">
-    <h2 class="section-heading wow slideInLeft" >Our Services</h2>
+    <h2 class="section-heading wow slideInLeft" style="font-size: 33px;">SERVICES</h2>
+    <div class="m">
+      <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
+      <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+      <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
+    </div>
 <!--     <div style="width: 330px; height: 3px; background-color: #F57D00;"></div>
- -->    <p class="wow slideInDown" data-wow-delay=".2s" style="font-size: 24px; font-weight: 400; ">We are a company with more than 10 years of experience in the market. We are characterized by our professionalism and organization.</p>
+ -->    <p class="wow slideInDown text-service" data-wow-delay=".2s">We are a company with more than 10 years of experience in the market. We are characterized by our professionalism and organization.</p>
   </div>
   <div class="row " data-wow-delay=".3s">
     <div class="column">
-      <div class="card card1  wow fadeIn" data-wow-delay=".2s">
-        <div class="icon-wrapper">
-          <i class="fas fa-wrench"></i>
+      <div class="card card1  wow fadeIn" data-wow-delay=".2s" style="width: 90%; margin: auto;">
+        <div class="icon-wrapper IconWrapper" >
+          <i class="fa fa-video-camera" aria-hidden="true" style="font-style: normal;" ></i>
         </div>
-        <h3 class="font-weight-lighter">Secutiry Systems
-</h3>
+        <h4 class="font-weight-sbold text-gray-700">Secutiry Systems</h4>
         <p>
-          With us you have the best surveillance system services, camera installation, live monitoring services and residential security systems in the hands of professionals.
-        </p>
-      </div>
-    </div>
-    <div class="column">
-      <div class="card card2  wow fadeIn" data-wow-delay=".4s">
-        <div class="icon-wrapper">
-          <i class="fas fa-wrench"></i>
-        </div>
-        <h3 class="font-weight-lighter">Whole Home Automation</h3>
-        <p>
-          When it comes to home automation, we are the best. We install all types of automation systems in your home or business.
-        </p>
+          With over 10 years of combined experience, clients with excellent state of the art product        </p>
+          <i class="fa-solid fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i>
 
       </div>
     </div>
     <div class="column">
-      <div class="card card3  wow fadeIn" data-wow-delay=".6s">
-        <div class="icon-wrapper">
-          <i class="fas fa-wrench"></i>
+      <div class="card card2  wow fadeIn" data-wow-delay=".4s" style="width: 90%; margin: auto;">
+        <div class="icon-wrapper IconWrapper">
+          <i class="fa fa-home" style="font-style: normal;"></i>
         </div>
-        <h3 class="font-weight-lighter">Home Theater Technicians You Can Trust</h3>
+        <h4 class="font-weight-sbold text-gray-700" >Whole Home Automation</h4>
         <p>
-          With over 10 years of combined experience, our professionals will design a system to suit your specific needs.
+          With over 10 years of combined experience, clients with excellent state of the art products and services
         </p>
+        <i class="fa-solid fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i>
+
+
       </div>
     </div>
     <div class="column">
-      <div class="card card4  wow fadeIn" data-wow-delay=".8s">
-        <div class="icon-wrapper">
-          <i class="fas fa-wrench"></i>
+      <div class="card card3  wow fadeIn" data-wow-delay=".6s" style="width: 90%; margin: auto;">
+        <div class="icon-wrapper IconWrapper">
+          <i class="fas fa-wrench"  style="font-style: normal;"></i>
         </div>
-        <h3 class="font-weight-lighter">Audiovisual Instalations</h3>
+        <h4 class="font-weight-sbold text-gray-700">Home Theater Technicians You Can Trust</h4>
         <p>
-          Simple, at Innovatech "The Firm" we are a professional audio visual integrators, dedicated to providing our clients with excellent state of the art product, functional design and quality customer service.
+          With over 10 years of combined experience, clients with excellent state of the art product
         </p>
+       <a href="/services-commercial.html"> <i class="fa-regular fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i></a>
+
       </div>
     </div>
     <div class="column">
-      <div class="card card5  wow fadeIn" data-wow-delay="1s">
-        <div class="icon-wrapper">
-          <i class="fas fa-wrench"></i>
+      <div class="card card4  wow fadeIn" data-wow-delay=".8s" style="width: 90%; margin: auto;">
+        <div class="icon-wrapper IconWrapper">
+          <i class="fas fa-car" style="font-style: normal;"></i>
         </div>
-        <h3 class="font-weight-lighter">Fiber optic & Complete Network</h3>
+        <h4 class="font-weight-sbold text-gray-700" >Access Control Systems</h4>
         <p>
-          We guarantee excellence and high-quality connectivity for your business.
+          With over 10 years of combined experience, clients with excellent state of the art product
         </p>
+        <i class="fa-solid fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i>
+
       </div>
     </div>
     <div class="column">
-      <div class="card card6 wow fadeIn" data-wow-delay="1.2s">
-        <div class="icon-wrapper">
-          <i class="fas fa-plug"></i>
+      <div class="card card5  wow fadeIn" data-wow-delay="1s" style="width: 90%; margin: auto;">
+        <div class="icon-wrapper IconWrapper">
+          <i class="fa fa-wifi" aria-hidden="true"  style="font-style: normal;"></i>
         </div>
-        <h3 class="font-weight-lighter">Customer Satisfaction Guaranteed</h3>
+        <h4 class="font-weight-sbold text-gray-700">Fiber optic & Complete Network</h4>
         <p>
-          From design to implementation Innovatech Solutions will make management and installation of your A/V equipment easy to use!
+          With over 10 years of combined experience, clients with excellent state of the art product
         </p>
+        <i class="fa-solid fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i>
+        
+
+      </div>
+    </div>
+    <div class="column">
+      <div class="card card6 wow fadeIn" data-wow-delay="1.2s" style="width: 90%; margin: auto;">
+        <div class="icon-wrapper IconWrapper">
+          <i class="fas fa-plug" style="font-style: normal;"></i>
+        </div>
+        <h4 class="font-weight-sbold text-gray-700">Audiovisual Instalations</h4>
+        <p>
+          With over 10 years of combined experience, clients with excellent state of the art product        </p>
+          <i class="fa-solid fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i>
       </div>
     </div>
   </div>
 </section>
-<!-- Call To Action 2 - Bootstrap Brain Component -->
-
- <!--  <div class="container row" style="margin:100px auto;">
-    <div class="col-sm card border-0 rounded-3  overflow-hidden text-center bsb-overlay" style="margin: 10px;background-image: url('./images/cctv_header2.jpg'); --bsb-overlay-opacity: .6; --bsb-overlay-bg-color:var(--bs-primary-rgb);">
-      <div class="card-body">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-12 col-md-10 col-xl-8 col-xxl-7">
-            <h2 class="h5 mb-4 text-white text-uppercase">Our Services & Expertise</h2>
-            <p class=" text-white mb-5">We are a design agency studio delivering custom creative & unique websites.</p>
-            <a href="#!" class="btn btn-light bsb-btn-3xl rounded mb-0 text-nowrap">Get Started</a>
-          </div>
-        </div>
+      
+<section class="bsb-cta-1 px-2 bsb-overlay" style="background-image: url('/images/services-section.jpg');">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-6"  >
+        <h2 class="fs-5 mb-3 text-white text-uppercase">Our Services & Expertise</h2>
+        <h3 class="display-5 text-white mb-4">We are a design agency studio delivering custom creative & unique websites.</h3>
+     
+        <a class="button button-md button-primary button-winona wow slideInDown" href="/services-commercial.html" data-wow-delay=".4s">Commercial</a>
+        <a class="button button-md button-primary button-winona wow slideInDown" href="/services-residenctial.html" data-wow-delay=".4s">Residential</a>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-6 " style="display: flex; justify-content: center;" >
+        <img style="height: 500px; height: 350px;" src="./images/SolutionsA4_1 (4).gif" alt="">
       </div>
     </div>
-    <div  class="col-sm card border-0 rounded-3  overflow-hidden text-center bsb-overlay" style="margin: 10px;background-image: url('./images/cctv_header2.jpg'); --bsb-overlay-opacity: .6; --bsb-overlay-bg-color:var(--bs-primary-rgb);">
-      <div class="card-body">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-12 col-md-10 col-xl-8 col-xxl-7">
-            <h2 class="h5 mb-4 text-white text-uppercase">Our Services & Expertise</h2>
-            <p class=" text-white mb-5">We are a design agency studio delivering custom creative & unique websites.</p>
-            <a href="#!" class="btn btn-light bsb-btn-3xl rounded mb-0 text-nowrap">Get Started</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
+  </div>
+</section>
 
-	<!-- /Services section -->
-      <section class="section novi-background section-md text-center " >
-        <div class="container " ">
-          <h3 class="text-uppercase font-weight-bold wow-outer"><span class="wow slideInDown">Popular properties</span></h3>
-          <div class="row row-lg-50 row-35 offset-top-2">
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-1-571x353.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">5619 Walnut Hill Ln, Dallas, TX 75229</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">$1500/mon</a></li>
-                  <li>30 Sq. Ft.</li>
-                  <li>3 Bedrooms</li>
-                </ul>
-                <p>A comfortable residential property located in a quiet and cozy area.</p>
-              </article>
-            </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-2-571x353.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">1808 Bolingbroke Pl, Fort Worth, TX 76140</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">$1300/mon</a></li>
-                  <li>40 Sq. Ft.</li>
-                  <li>2 Bedrooms</li>
-                </ul>
-                <p>Perfect for those who love both city life and the countryside.</p>
-              </article>
-            </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-3-571x353.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">924 Bel Air Rd, Los Angeles, CA 90077</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">1800/mon</a></li>
-                  <li>50 Sq. Ft.</li>
-                  <li>4 Bedrooms</li>
-                </ul>
-                <p>Located in 5 mins from downtown, this property is great for anyone.</p>
-              </article>
-            </div>
-            <div class="col-md-6 wow-outer">
-              <!-- Post Modern-->
-              <article class="post-modern wow slideInLeft"><a class="post-modern-media" href="#"><img src="images/grid-blog-4-571x353.jpg" alt="" width="571" height="353"/></a>
-                <h4 class="post-modern-title"><a class="post-modern-title" href="#">13510 W Cheery Lynn Rd, Avondale, AZ 85392</a></h4>
-                <ul class="post-modern-meta">
-                  <li><a class="button-winona" href="#">$2700/mon</a></li>
-                  <li>90 Sq. Ft.</li>
-                  <li>2 Bedrooms</li>
-                </ul>
-                <p>A luxury mansion for people who enjoy the high-end amenities.</p>
-              </article>
-            </div>
-            <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="#">view More properties</a></div>
-          </div>
-        </div>
-      </section>
-      <section class="section novi-background section-lg bg-gray-100">
+      
+      <div class="" style="position: relative; left: 0px; margin: 100px 15px 0px 60px;">
+        <h2 class="section-heading wow slideInLeft" style="font-size: 30px;">TESTIMONIALS
+        </h2>
+        <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
+        <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+        <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
+      </div>
+      <div class=" novi-background  text-center" style="margin: 50px 0px;">
         <div class="container">
-          <div class="row row-30">
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-user wow fadeIn"></div>
-                <div class="box-minimal-main wow-outer">
-                  <h4 class="box-minimal-title wow slideInDown">Qualified Employees</h4>
-                  <p class="wow fadeInUpSmall">Our team consists of more than 20 qualified and experienced real estate brokers and property managers ready to help you.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-bubble-text wow fadeIn" data-wow-delay=".1s"></div>
-                <div class="box-minimal-main wow-outer">
-                  <h4 class="box-minimal-title wow slideInDown" data-wow-delay=".1s">Free Consultations</h4>
-                  <p class="wow fadeInUpSmall" data-wow-delay=".1s">Our acquaintance with a client always begins with a free consultation to find out what kind of property they are looking for.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-4 wow-outer">
-              <!-- Box Minimal-->
-              <article class="box-minimal">
-                <div class="box-chloe__icon novi-icon linearicons-star wow fadeIn" data-wow-delay=".2s"></div>
-                <div class="box-minimal-main wow-outer">
-                  <h4 class="box-minimal-title wow slideInDown" data-wow-delay=".2s">100% Guaranteed</h4>
-                  <p class="wow fadeInUpSmall" data-wow-delay=".2s">All the results that you get from our realtors are 100% guaranteed to offer you the best choice of properties throughout the USA.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Services-->
-      <section class="section novi-background section-lg text-center">
-        <div class="container">
-          <h3 class="text-uppercase">Residential property categories</h3>
-          <p><span class="text-width-1">At our agency, we work with various types of residential real estate property. You can find out more about our properties by browsing our website.</span></p>
-          <div class="row row-35 row-xxl-70 offset-top-2">
-            <div class="col-sm-6 col-lg-3">
-              <!-- Thumbnail Light-->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-1-270x300.jpg" alt="" width="270" height="300"/></a>
-                <h4 class="thumbnail-light-title"><a href="#">Single-Family Homes</a></h4>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <!-- Thumbnail Light-->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-2-270x300.jpg" alt="" width="270" height="300"/></a>
-                <h4 class="thumbnail-light-title"><a href="#">Townhouses</a></h4>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <!-- Thumbnail Light-->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-3-270x300.jpg" alt="" width="270" height="300"/></a>
-                <h4 class="thumbnail-light-title"><a href="#">Multi-Family Homes</a></h4>
-              </article>
-            </div>
-            <div class="col-sm-6 col-lg-3">
-              <!-- Thumbnail Light-->
-              <article class="thumbnail-light"><a class="thumbnail-light-media" href="#"><img class="thumbnail-light-image" src="images/service-thumbnail-4-270x300.jpg" alt="" width="270" height="300"/></a>
-                <h4 class="thumbnail-light-title"><a href="#">Condominiums</a></h4>
-              </article>
-            </div>
-            <div class="col-md-12 wow-outer"><a class="button button-primary button-winona button-md" href="#">view all services</a></div>
-          </div>
-        </div>
-      </section>
-      <section class="section novi-background section-lg text-center bg-gray-100">
-        <div class="container">
-          <h3 class="text-uppercase wow-outer"><span class="wow slideInUp">Our Team</span></h3>
-          <div class="row row-lg-50 row-35 row-xxl-70 justify-content-center justify-content-lg-start">
-            <div class="col-md-10 col-lg-6 wow-outer">
-              <!-- Profile Creative-->
-              <article class="profile-creative wow slideInLeft">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-1-270x273.jpg" alt="" width="270" height="273"/>
-                </figure>
-                <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">Nathalie Porter</a></h5>
-                  <p class="profile-creative-position">Founder, Broker</p>
-                  <div class="profile-creative-contacts">
-                    <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
-                  </div>
-                  <p>Ms. Porter founded our company in 1989 with a vision to help guests and residents of the USA to easily find and buy or rent real estate in all 50 states.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-10 col-lg-6 wow-outer">
-              <!-- Profile Creative-->
-              <article class="profile-creative wow slideInLeft" data-wow-delay=".2s">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-2-270x273.jpg" alt="" width="270" height="273"/>
-                </figure>
-                <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">John Thompson</a></h5>
-                  <p class="profile-creative-position">Sales Associate</p>
-                  <div class="profile-creative-contacts">
-                    <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
-                  </div>
-                  <p>John has been in sales and marketing for the past 15 years. He has excellent knowledge about the local market both residential and commercial.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-10 col-lg-6 wow-outer">
-              <!-- Profile Creative-->
-              <article class="profile-creative wow slideInLeft">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-3-270x273.jpg" alt="" width="270" height="273"/>
-                </figure>
-                <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">Brian Payne</a></h5>
-                  <p class="profile-creative-position">Realtor</p>
-                  <div class="profile-creative-contacts">
-                    <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
-                  </div>
-                  <p>Brian is not only a Licensed Realtor but also holds the Title Producers and Mortgage Licenses, which makes him a very knowledgeable real estate expert.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-10 col-lg-6 wow-outer">
-              <!-- Profile Creative-->
-              <article class="profile-creative wow slideInLeft" data-wow-delay=".2s">
-                <figure class="profile-creative-figure"><img class="profile-creative-image" src="images/team-4-270x273.jpg" alt="" width="270" height="273"/>
-                </figure>
-                <div class="profile-creative-main">
-                  <h5 class="profile-creative-title"><a href="#">Marie Fernandez</a></h5>
-                  <p class="profile-creative-position">Broker</p>
-                  <div class="profile-creative-contacts">
-                    <div class="object-inline"><span class="icon novi-icon icon-md mdi mdi-phone"></span><a href="tel:#">1-800-1324-567</a></div>
-                  </div>
-                  <p>Marie’s goal is to provide clients with the highest level of marketing expertise and customer service to help them reach their uppermost real estate goals.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Best offer-->
-      <section class="section novi-background section-1 bg-primary-darker text-center" style="background-image: url(images/bg-1-1920-455.jpg);">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-sm-10 col-lg-7 col-xl-6">
-              <h3 class="wow-outer"><span class="wow slideInDown text-uppercase">Best offers</span></h3>
-              <p class="heading-subtitle">of September</p>
-              <p class="wow-outer offset-top-4"><span class="wow slideInDown" data-wow-delay=".05s">With a variety of accountants available at our company, you can always choose one that fits your corporate requirements.</span></p>
-              <div class="wow-outer button-outer"><a class="button button-primary-white button-winona wow slideInDown" href="#" data-wow-delay=".1s">Read more</a></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section novi-background section-lg text-center">
-        <div class="container">
-          <h3 class="wow-outer"><span class="wow slideInDown text-uppercase">Testimonials</span></h3>
+         
           <!-- Owl Carousel-->
           <div class="owl-carousel wow fadeIn" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true" data-nav="false" data-loop="true" data-autoplay="true" data-autoplay-speed="731" data-autoplay-timeout="4268" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-6-96x96.jpg" alt="" width="96" height="96"/>
+                <div class="quote-classic-avatar"><img src="https://tse1.mm.bing.net/th?id=OIP.wU2TNRxk68paPBwCZ_MWNAHaHa&pid=Api&P=0&h=180" alt="" width="96" height="96"/>
                 </div>
                 <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Albert Webb</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
+                  <cite class="quote-classic-cite">Robert Diaz</cite>
+                  <p class="quote-classic-caption"  style="color: #F57D00;">Regular Client</p>
                 </div>
               </div>
               <div class="quote-classic-text">
-                <p>I have just bought an apartment in LA thanks to you and your brokers. Everything went smooth and easy, the price was quite affordable, and I’m sure I will use your services again in the future.</p>
+                <p>Great company to trust & work with, after the purchase of my new home I hired Innovatech Solutions to design a new Theater and enhance my security surveillance system and i must say they did just that. Danny was great to work with!!</p>
               </div>
             </blockquote>
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-1-96x96.jpg" alt="" width="96" height="96"/>
+                <div class="quote-classic-avatar"><img src="https://tse3.mm.bing.net/th?id=OIP.hmrU5CcSbRtSe-of71jK0AAAAA&pid=Api&P=0&h=180" alt="" width="96" height="96"/>
                 </div>
                 <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Kelly McMillan</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
+                  <cite class="quote-classic-cite">Carolina Espinosa</cite>
+                  <p class="quote-classic-caption" style="color: #F57D00;">Regular Client</p>
                 </div>
               </div>
               <div class="quote-classic-text">
-                <p>I have recently sold my rental property in Nelson via inHouse. Everything about the sale was made seamless by your team. You gave me great advice about what was necessary to expedite the sale.</p>
+                <p>After a rough previous integrator experience. I met Danny and had his team at Innovatech Solutions redesign my Control4 system. They over delivered and made sure that all of my home works amazing in one platform! Couldn't ask for more.</p>
               </div>
             </blockquote>
             <blockquote class="quote-classic">
               <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-2-96x96.jpg" alt="" width="96" height="96"/>
+                <div class="quote-classic-avatar"><img src="https://tse1.mm.bing.net/th?id=OIP.wU2TNRxk68paPBwCZ_MWNAHaHa&pid=Api&P=0&h=180" alt="" width="96" height="96"/>
                 </div>
                 <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Harold Barnett</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
+                  <cite class="quote-classic-cite">Salomon Calu</cite>
+                  <p class="quote-classic-caption"  style="color: #F57D00;">Regular Client</p>
                 </div>
               </div>
               <div class="quote-classic-text">
-                <p>I really appreciate your time and expertise in helping me find and buy my current home in Seattle, WA. Hope we can do business again in the future and I will recommend you to family and friends.</p>
+                <p>Innovatech Solutions designed my entire Business network, access control and surveillance systems. Let me tell you they are very professional and knowledgeable, trustworthy. This company was amazing in handling all of this! Best part of all, they too assisted in my retrofit at my home! Best A/V company thus far!</p>
               </div>
             </blockquote>
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-3-96x96.jpg" alt="" width="96" height="96"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Bill Warner</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>I have just sold a property with inHouse and I can’t thank them enough. Their team has great communication skills and they have regularly communicated with me throughout the whole process.</p>
-              </div>
-            </blockquote>
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-4-96x96.jpg" alt="" width="96" height="96"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Ann Lee</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>Your skilled team helped me make the dream of selling my old property a reality. The sale went smoothly, and I just closed on an ideal new place I am excited to call home. Thank you for your great services!</p>
-              </div>
-            </blockquote>
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="images/testimonials-person-5-96x96.jpg" alt="" width="96" height="96"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Peter Clarkson</cite>
-                  <p class="quote-classic-caption">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>I have to say that inHouse has the best brokers we've ever worked with. Their professionalism, personality, attention to detail, responsiveness and ability to close the deal are outstanding!</p>
-              </div>
-            </blockquote>
+        
+           
+            
           </div>
         </div>
-      </section><a class="banner" href="https://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_big_02.jpg" alt=""/></a>
+
+
+      </div>
+   
+    
+      <div class="container" style="margin: 30px 0px; padding: 0;">
+        <h2 class="section-heading wow slideInLeft" style="font-size: 30px; padding-left: 30px;">OUR CERTIFIED PARTNERS
+        </h2>
+        <div class="m" style="padding-left: 30px;">
+          <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
+          <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+          <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
+        </div>
+        <div class="row  g-4" style="margin: auto;">
+            <div class="col-3 col-md-2 col-lg-2  d-flex justify-content-center align-items-center" style="padding-top: 0;">
+                <!-- Content for the first column -->
+                <img  src="/images/brands/elan-Logo.jpg" alt="">
+              </div>
+              
+              <div class="col-3 col-md-2 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
+                <!-- Content for the second column -->
+                <img src="images/brands/blob-0015.png" alt="">
+              </div>
+              
+              <div class="col-3 col-md-2 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
+                <!-- Content for the third column -->
+                <img src="images/brands/nice-acquires-nortek-500x300.jpg" alt="">
+              </div>
+              
+              <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
+              <img src="images/brands/triad_logo_color_color.jpg" alt="">
+              <!-- Content for the fourth column -->
+            </div>
+              <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
+              <img src="images/brands/snapone.svg" alt="">
+              <!-- Content for the fourth column -->
+            </div>
+              <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
+              <img src="images/brands/nodac.png" alt="">
+              <!-- Content for the fourth column -->
+            </div>
+        
+              <div class="col-3 col-md-2 col-lg-2  d-flex justify-content-center align-items-center" style="padding-top: 0;">
+                  <!-- Content for the first column -->
+                  <img  src="/images/brands/unnamed.png" alt="">
+                </div>
+                
+                <div class="col-3 col-md-2 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
+                  <!-- Content for the second column -->
+                  <img src="images/brands/1519856516226.jpeg" alt="">
+                </div>
+                
+                <div class="col-3 col-md-2 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
+                  <!-- Content for the third column -->
+                  <img src="images/brands/blob-0015.png" alt="">
+                </div>
+                
+                <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
+                <img src="images/brands/skyvuecom.jpg" alt="">
+                <!-- Content for the fourth column -->
+              </div>
+                <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
+                <img src="images/brands/MikroTik-logo.jpg" alt="">
+                <!-- Content for the fourth column -->
+              </div>
+                <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
+                <img src="images/brands/pakedge_logo_color.jpg" alt="">
+                <!-- Content for the fourth column -->
+              </div>
+              
+ 
+            
+        </div>
+         
+    </div>
+
+    <div  style=" padding: 50px 30px;;background-image: url(https://www.sourcesecurity.com/img/inner-main-bg.jpg); background-size: cover; background-repeat: no-repeat; padding-top: 100px; height: auto;">
+      <div class="col">
+        <h2 class="section-heading wow slideInLeft" style="font-size: 32px;">LOCATIONS</h2>
+        <div class="m">
+          <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
+          <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+          <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
+        </div>
+       
+      </div>
+
+      <div class="blog-card" style="height: 250px;">
+          <div class="meta">
+            <div class="photo" style="background-image: url(https://marketplace.canva.com/xzXG8/MAEdWgxzXG8/1/s2/canva-white-desks-and-swivel-chairs-in-the-office-MAEdWgxzXG8.jpg)"></div>
+            
+          </div>
+          <div class="description">
+            <h1>South Florida</h1>
+            <h2>Main office</h2>
+            <p>Our main office, currently serving all of South Florida location and Worlwide! </p>
+            
+          </div>
+        </div>
+        <div class="blog-card alt" style=" height: 250px;">
+          <div class="meta">
+            <div class="photo" style="background-image: url('https://media-private.canva.com/MAC-J0wLsuc/1/screen_2x.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20231009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231009T063709Z&X-Amz-Expires=50454&X-Amz-Signature=4262a6b820389d001d5a5643f44c8f29fff2e53417bb107a4053f45f941e6986&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2009%20Oct%202023%2020%3A38%3A03%20GMT')"></div>
+            
+          </div>
+          <div class="description">
+            <h1>Medellin, Colombia</h1>
+            <h2>Second operations center</h2>
+            <p>Our secondary location designing new projects and systems in the heart of Medellin Colombia!</p>
+          </div>
+        </div>
+  </div>
+    <!-- Call To Action 2 - Bootstrap Brain Component -->
+    <section class="bsb-cta-1 px-2 bsb-overlay" style="margin-top: 100px;background:linear-gradient(0deg, rgba(6, 212, 112, 0.767), rgba(2, 236, 72, 0.685)) ,url('/images/contact.jpg');
+     background-repeat:no-repeat; background-size: cover; background-position: center;height: 400px;">
+      <div class="container" >
+        <div class="row">
+          <div class="col-12 " style="display: flex; flex-direction: column; align-items: center; justify-items: center;" >
+            <h2 class="fs-5 mb-3 text-white text-uppercase">Let's Start</h2>
+            <h3 class="display-5 text-white mb-4">Ready to get started? Get in touch and find out how we can help you.</h3>
+         
+            <a class="button button-md button-primary button-winona wow slideInDown" href="/contact.html" data-wow-delay=".4s">Contact</a>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+     <!--  <a class="banner" hre://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_big_02.jpg" alt=""/></a> -->
       <footer class="section novi-background footer-advanced bg-gray-700">
         <div class="footer-advanced-main">
           <div class="container">
             <div class="row row-50">
               <div class="col-lg-4">
                 <h5 class="font-weight-bold text-uppercase text-white">About Us</h5>
-                <p class="footer-advanced-text">inHouse is the largest full-service real estate and property management company. We offer expertise in the marketing and sale of a wide range of properties, including residential real estate, farms and lifestyle blocks, as well as commercial and industrial properties that we hope may interest you.</p>
+                <p class="footer-advanced-text">Innovatech Solutions is a leading company in technological solutions for your home or business. We work with passion to provide you with the best service from the hand of highly trained professionals and cutting edge technology.</p>
               </div>
               <div class="col-sm-7 col-md-5 col-lg-4">
-                <h5 class="font-weight-bold text-uppercase text-white">Recent Blog Posts</h5>
-                <!-- Post Inline-->
-                <article class="post-inline">
-                  <p class="post-inline-title"><a href="#">Real Estate Guide: 7 Important Tips for Buying a Home</a></p>
-                  <ul class="post-inline-meta">
-                    <li>by Mike Barnes</li>
-                    <li><a href="#">2 days ago</a></li>
-                  </ul>
-                </article>
-                <!-- Post Inline-->
-                <article class="post-inline">
-                  <p class="post-inline-title"><a href="#">Single-Family Homes as a Housing Option for Young Families</a></p>
-                  <ul class="post-inline-meta"> 
-                    <li>by Mike Barnes</li>
-                    <li><a href="#">2 days ago</a></li>
-                  </ul>
-                </article>
+                <h5 class="font-weight-bold text-uppercase text-white">Contact Information</h5>
+                <ul>
+                  <li style="display: flex; flex-direction: row; margin: 10px; align-items: center;"><i class="fa-solid fa-phone " style="margin-right: 10px; font-size: 25px;"></i> <span style="display: flex; flex-direction: column;"> <span style="font-weight: 600; ">Our Location</span><span>Hollywood, FL, EE. UU.</span></span> </li>
+                  <li style="display: flex; flex-direction: row; margin: 10px; align-items: center;"><i class="fa-regular fa-globe " style="margin-right: 10px; font-size: 25px;"></i> <span style="display: flex; flex-direction: column;"> <span style="font-weight: 600; ">Phone Number</span><span>(+1)954-400-1317</span></span> </li>
+                  <li style="display: flex; flex-direction: row; margin: 10px; align-items: center;"><i class="fa-regular fa-envelope" style="margin-right: 10px; font-size: 25px;"></i> <span style="display: flex; flex-direction: column;"> <span style="font-weight: 600; ">Email Address</span><span>danny@innovatechcorp.net</span></span> </li>
+                
+              
+                </ul>
+             
               </div>
               <div class="col-sm-5 col-md-7 col-lg-4">
                 <h5 class="font-weight-bold text-uppercase text-white">Gallery</h5>
                 <div class="row row-x-10" data-lightgallery="group">
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-1.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-1-85x85.jpg" alt=""/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer1.jpeg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer1.jpeg" alt=""/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-2.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-2-85x85.jpg" alt=""/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer2.jpeg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer2.jpeg" alt=""/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-3.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-3-85x85.jpg" alt=""/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer3.jpeg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer3.jpeg" alt=""/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-4.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-4-85x85.jpg" alt=""/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer4.jpeg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer4.jpeg" alt=""/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-5.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-5-85x85.jpg" alt=""/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer5.jpg"" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer5.jpg" alt=""/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-6-85x85.jpg" alt=""/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer6.jpg" alt=""/>
                       <div class="thumbnail-minimal-caption"> </div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-7-85x85.jpg" alt=""/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer7.jpg" alt=""/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
-                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="images/gallery-original-8.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="images/footer-gallery-8-85x85.jpg" alt=""/>
+                  <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer8.jpeg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer8.jpeg" alt=""/>
                       <div class="thumbnail-minimal-caption"></div></a></div>
                 </div>
               </div>
@@ -599,9 +706,10 @@
                 <ul class="list-nav"> 
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about-us.html">About</a></li>
-                  <li><a href="#">Properties</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="contacts.html">Contacts</a></li>
+                  <li><a href="services-residenctial.html">Residential</a></li>
+                  <li><a href="services-commercial.html">Commercial</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="support.html">Support</a></li>
                 </ul>
               </div>
               <div>
@@ -621,7 +729,7 @@
         </div>
         <div class="footer-advanced-aside">
           <div class="container">
-            <div class="footer-advanced-layout"><a class="brand" href="index.html"><img src="images/logo-light-115x34.png" alt="" width="115" height="34" srcset="images/logo-light-115x34.png 2x"/></a>
+            <div class="footer-advanced-layout"><a class="brand" href="index.html"><img src="images/innovatech-solutions (1).png" alt="" width="170" height="34" srcset="/images/innovatech-solutions (1).png"/></a>
               <!-- Rights-->
               <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. All Rights Reserved. Design by <a href="https://www.templatemonster.com">TemplateMonster</a></p>
             </div>
