@@ -18,13 +18,85 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <style>
     .ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
+    .slider {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
 
-    /**********************
-/***** Services *******
-/*********************/
+.slider .slide-track {
+  display: flex;
+    animation: scroll 15s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
+    width: calc(200px * 14);
+}
 
-/*PEN STYLES*/
-/*PEN STYLES*/
+.slider .slide {
+    width: 300px;
+ 
+    display: flex;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+.slider .slide img {
+    width: 100%;
+   
+}
+    .slider2 {
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+ 
+}
+
+.slider2 .slide-track {
+    display: flex;
+    animation: scroll2 15s linear infinite;
+    -webkit-animation: scroll2 30s linear infinite;
+    width: calc(200px * 14);
+}
+
+.slider2 .slide {
+  width: 300px;
+ 
+ display: flex;
+ align-items: center;
+
+}
+
+.slider2 .slide img {
+    width: 100%;
+
+}
+
+@keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(calc(-125vw));
+    }
+    100% {
+      -webkit-transform: translateX(0);
+        transform: translateX(calc(200px *7));
+    }
+  
+}
+ 
+
+@keyframes scroll2 {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(calc(100vw));
+    }
+    100% {
+      -webkit-transform: translateX(0);
+        transform: translateX(calc(-200px *7));
+    }
+  
+}
+
 
 
 .blog-card {
@@ -473,14 +545,16 @@
 </section>
 
       
-      <div class="" style="position: relative; left: 0px; margin: 100px 15px 0px 60px;">
+      <div style="position: relative; left: 0px; margin: 100px 15px 0px 60px;">
         <h2 class="section-heading wow slideInLeft" style="font-size: 30px;">TESTIMONIALS
         </h2>
         <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
         <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
         <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
       </div>
-      <div class=" novi-background  text-center" style="margin: 50px 0px;">
+
+      
+      <div class="novi-background text-center" >
         <div class="container">
          
           <!-- Owl Carousel-->
@@ -534,76 +608,59 @@
       </div>
    
     
-      <div class="container" style="margin: 30px 0px; padding: 0;">
-        <h2 class="section-heading wow slideInLeft" style="font-size: 30px; padding-left: 30px;">OUR CERTIFIED PARTNERS
-        </h2>
-        <div class="m" style="padding-left: 30px;">
-          <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
-          <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
-          <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
-        </div>
-        <div class="row  g-4" style="margin: auto;">
-            <div class="col-3 col-md-2 col-lg-2  d-flex justify-content-center align-items-center" style="padding-top: 0;">
-                <!-- Content for the first column -->
-                <img  src="/images/brands/elan-Logo.jpg" alt="">
-              </div>
-              
-              <div class="col-3 col-md-2 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
-                <!-- Content for the second column -->
-                <img src="images/brands/blob-0015.png" alt="">
-              </div>
-              
-              <div class="col-3 col-md-2 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
-                <!-- Content for the third column -->
-                <img src="images/brands/nice-acquires-nortek-500x300.jpg" alt="">
-              </div>
-              
-              <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
-              <img src="images/brands/triad_logo_color_color.jpg" alt="">
-              <!-- Content for the fourth column -->
+
+    
+    <div class="slider" style="margin: 100px 30px;">
+      <h2 class="section-heading wow slideInLeft" style="font-size: 30px; padding-left: 30px;">OUR CERTIFIED PARTNERS
+      </h2>
+      <div class="m" style="padding-left: 30px;">
+        <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
+        <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+        <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
+      </div>
+      <div class="slide-track" style="height: 90px; margin-top: 50px;">
+          <div class="slide" >
+              <img src="https://www.lvtec.fr/wp-content/uploads/images/axis-logo.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/images/brands/down.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="/images/brands/elan-Logo.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/brands/MikroTik-logo.jpg" alt="">
+          </div>
+          <div class="slide">
+            <div class="slide">
+              <img src="images/brands/lutron.png" alt="">
             </div>
-              <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
-              <img src="images/brands/snapone.svg" alt="">
-              <!-- Content for the fourth column -->
-            </div>
-              <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
-              <img src="images/brands/nodac.png" alt="">
-              <!-- Content for the fourth column -->
-            </div>
+            <img src="/images/brands/control4.png" alt="">
+          </div>
+     
+      </div>
+  </div>
+    <div class="slider2" style="height: 90px; margin-bottom: 130px;">
+      <div class="slide-track" style="height: 90px;">
+          <div class="slide" >
+              <img src="/images/brands/nortek.jpg" >
+          </div>
         
-              <div class="col-3 col-md-2 col-lg-2  d-flex justify-content-center align-items-center" style="padding-top: 0;">
-                  <!-- Content for the first column -->
-                  <img  src="/images/brands/unnamed.png" alt="">
-                </div>
-                
-                <div class="col-3 col-md-2 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
-                  <!-- Content for the second column -->
-                  <img src="images/brands/1519856516226.jpeg" alt="">
-                </div>
-                
-                <div class="col-3 col-md-2 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
-                  <!-- Content for the third column -->
-                  <img src="images/brands/blob-0015.png" alt="">
-                </div>
-                
-                <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
-                <img src="images/brands/skyvuecom.jpg" alt="">
-                <!-- Content for the fourth column -->
-              </div>
-                <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
-                <img src="images/brands/MikroTik-logo.jpg" alt="">
-                <!-- Content for the fourth column -->
-              </div>
-                <div class="col-3 col-md-3 col-lg-2 d-flex justify-content-center align-items-center" style="padding-top: 0;">
-                <img src="images/brands/pakedge_logo_color.jpg" alt="">
-                <!-- Content for the fourth column -->
-              </div>
-              
- 
-            
-        </div>
-         
-    </div>
+          <div class="slide">
+              <img src="/images/brands/pakedge_logo_color.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="/images/brands/skyvuecom.jpg" alt="">
+          </div>
+          <div class="slide">
+              <img src="images/brands/snapone.svg" alt="">
+          </div>
+          <div class="slide">
+              <img src="images/brands/triad_logo_color_color.jpg" alt="">
+          </div>
+        
+      </div>
+  </div>
 
     <div  style=" padding: 50px 30px;;background-image: url(https://www.sourcesecurity.com/img/inner-main-bg.jpg); background-size: cover; background-repeat: no-repeat; padding-top: 100px; height: auto;">
       <div class="col">
@@ -630,7 +687,7 @@
         </div>
         <div class="blog-card alt" style=" height: 250px;">
           <div class="meta">
-            <div class="photo" style="background-image: url('https://media-private.canva.com/MAC-J0wLsuc/1/screen_2x.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20231009%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231009T063709Z&X-Amz-Expires=50454&X-Amz-Signature=4262a6b820389d001d5a5643f44c8f29fff2e53417bb107a4053f45f941e6986&X-Amz-SignedHeaders=host&response-expires=Mon%2C%2009%20Oct%202023%2020%3A38%3A03%20GMT')"></div>
+            <div class="photo" style="background-image: url('https://media-private.canva.com/MABkmi_2CuE/2/screen_2x.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20231010%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231010T201118Z&X-Amz-Expires=97311&X-Amz-Signature=f16d2897a5f7edda2ad51fb2c4ae3f9b85137707249fbd4a11abf81f16f5df6d&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2011%20Oct%202023%2023%3A13%3A09%20GMT')"></div>
             
           </div>
           <div class="description">
