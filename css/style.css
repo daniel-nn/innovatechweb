@@ -1,24 +1,24 @@
 
 .header{
-	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 71, 11, 0.3)), url(/images/controlaccess.jpg);
+	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 71, 11, 0.3)), url(/images/index/Carrusel/carrousel1.jpg);
 
 	
 }
 .header2{
-	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 71, 11, 0.3)), url(/images/header2.jpg);
+	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 71, 11, 0.3)), url(/images/index/Carrusel/carrousel2.jpg);
 
 
 }
 .header3{
-	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(/images/footer2.jpeg);
+	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(/images/index/Carrusel/carrousel3.jpeg);
 
 }
 .header4{
-	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(/images/audiovisual.jpeg);
+	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(/images/index/Carrusel/carrousel4.jpeg);
 
 }
 .header5{
-	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(/images/cctv_header2.jpg);
+	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(/images/index/Carrusel/carrousel5.jpg);
 
 }
 
@@ -87,42 +87,42 @@ p {
 	width: 50px;
 }
 .card1:hover {
-	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/security-systems.jpg);
+	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/index/services/services1.jpg);
 	
 	background-size: cover;
 	background-position: 100% 0;
 
 }
 .card2:hover {
-	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/home-automation.jpeg);
+	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/index/services/services2.jpeg);
 	
 	background-size: cover;
 	background-position: 70% 0;
 
 }
 .card3:hover {
-	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/teatro.jpg);
+	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/index/services/services3.jpg);
 	
 	background-size: cover;
 	background-position: 100% 0;
 
 }
 .card4:hover {
-	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/acces-control-services.jpg);
+	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/index/services/services4.jpg);
 	
 	background-size: cover;
 	background-position: 50% 0;
 
 }
 .card5:hover {
-	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/cctv_header2.jpg);
+	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/index/services/services5.jpg);
 	
 	background-size: cover;
 	background-position: 50% 0;
 
 }
 .card6:hover {
-	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/audiovisual.jpeg);
+	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/index/services/services6.jpeg);
 	
 	background-size: cover;
 	background-position: 50% 0;
@@ -1967,7 +1967,6 @@ html .list-inline-md > * {
 	font-weight: 400;
 	font-size: .875em;
 	letter-spacing: .08em;
-	text-transform: uppercase;
 	color: #495057;
 }
 
@@ -18135,9 +18134,12 @@ margin: auto;
 overflow: hidden;
 }
 
+.texto-footer{
+	color: rgb(175, 170, 190);
+}
 .texto-blanco {
 
-	color: #c0c0c0;
+	color: white;
 
 }
 
@@ -18156,7 +18158,7 @@ overflow: hidden;
 .texto-negro {
 
 	color:#000
-	
+
 }  
 
 .slider .slide-track {
