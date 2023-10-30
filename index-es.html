@@ -1,759 +1,639 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="en">
-  <head>
-    <title>Innovatech | Home</title>
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.2/components/ctas/cta-2/assets/css/cta-2.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css" id="main-styles-link">
-    <script src="https://kit.fontawesome.com/ccb7c227e4.js" crossorigin="anonymous"></script>
-      
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-    <style>
-    .ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
-    .slider {
-    width: 90vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
-}
 
-.slider .slide-track {
-  display: flex;
-    animation: scroll 15s linear infinite;
-    -webkit-animation: scroll 30s linear infinite;
-    width: calc(200px * 14);
-}
+<head>
+  <title>Innovatech | Inicio</title>
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport"
+    content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.2/components/ctas/cta-2/assets/css/cta-2.css">
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css" id="main-styles-link">
+  <script src="https://kit.fontawesome.com/ccb7c227e4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+</head>
 
-.slider .slide {
-    width: 300px;
- 
-    display: flex;
-    align-items: center;
-    margin: 0px 5px;
-}
-
-.slider .slide img {
-    width: 100%;
-   
-}
-    .slider2 {
-    width: 90vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;
- 
-}
-
-.slider2 .slide-track {
-    display: flex;
-    animation: scroll2 15s linear infinite;
-    -webkit-animation: scroll2 30s linear infinite;
-    width: calc(200px * 14);
-}
-
-.slider2 .slide {
-  width: 300px;
- 
- display: flex;
- align-items: center;
-
-}
-
-.slider2 .slide img {
-    width: 100%;
-
-}
-
-@keyframes scroll {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(calc(-125vw));
-    }
-    100% {
-      -webkit-transform: translateX(0);
-        transform: translateX(calc(200px *7));
-    }
-  
-}
- 
-
-@keyframes scroll2 {
-    0% {
-      -webkit-transform: translateX(0);
-      transform: translateX(calc(100vw));
-    }
-    100% {
-      -webkit-transform: translateX(0);
-        transform: translateX(calc(-200px *7));
-    }
-  
-}
-
-
-
-.blog-card {
-  display: flex;
-  flex-direction: column;
-  margin: 2rem auto;
-  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.6%;
-  background: #fff;
-  line-height: 1.4;
-  font-family: 'Montserrat', sans-serif;
-  border-radius: 5px;
-  overflow: hidden;
-  z-index: 0;
-
-}
-.blog-card a {
-  color: inherit;
-}
-.blog-card a:hover {
-  color: #FF671F;
-}
-.blog-card:hover .photo {
-  transform: scale(1.3) rotate(3deg);
-}
-.blog-card .meta {
-  position: relative;
-  z-index: 0;
-  height: 200px;
-}
-.blog-card .photo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.2s;
-}
-.blog-card .details, .blog-card .details ul {
-  margin: auto;
-  padding: 0;
-  list-style: none;
-}
-.blog-card .details {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -100%;
-  margin: auto;
-  transition: left 0.2s;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  padding: 10px;
-  width: 100%;
-  font-size: 0.9rem;
-}
-.blog-card .details a {
-  text-decoration: dotted underline;
-}
-.blog-card .details ul li {
-  display: inline-block;
-}
-.blog-card .details .author:before {
-  font-family: FontAwesome;
-  margin-right: 10px;
-  content: "\f007";
-}
-.blog-card .details .date:before {
-  font-family: FontAwesome;
-  margin-right: 10px;
-  content: "\f133";
-}
-.blog-card .details .tags ul:before {
-  font-family: FontAwesome;
-  content: "\f02b";
-  margin-right: 10px;
-}
-.blog-card .details .tags li {
-  margin-right: 2px;
-}
-.blog-card .details .tags li:first-child {
-  margin-left: -4px;
-}
-.blog-card .description {
-  padding: 1rem;
-  background: #fff;
-  position: relative;
-  z-index: 1;
-}
-.blog-card .description h1, .blog-card .description h2 {
-  font-family: Poppins, sans-serif;
-}
-.blog-card .description h1 {
-  line-height: 1;
-  margin: 0;
-  font-size: 1.7rem;
-}
-.blog-card .description h2 {
-  font-size: 1rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #a2a2a2;
-  margin-top: 5px;
-}
-.blog-card .description .read-more {
-  text-align: right;
-}
-.blog-card .description .read-more a {
-  color: #FF671F;
-  display: inline-block;
-  position: relative;
-}
-.blog-card .description .read-more a:after {
-  content: "\f061";
-  font-family: FontAwesome;
-  margin-left: -10px;
-  opacity: 0;
-  vertical-align: middle;
-  transition: margin 0.3s, opacity 0.3s;
-}
-.blog-card .description .read-more a:hover:after {
-  margin-left: 5px;
-  opacity: 1;
-}
-.blog-card p {
-  position: relative;
-  margin: 1rem 0 0;
-}
-.blog-card p:first-of-type {
-  margin-top: 1.25rem;
-}
-.blog-card p:first-of-type:before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  background: #FF671F;
-  width: 35px;
-  top: -0.75rem;
-  border-radius: 3px;
-}
-.blog-card:hover .details {
-  left: 0%;
-}
-@media (min-width: 640px) {
-  .blog-card {
-    flex-direction: row;
-    max-width: 700px;
-  }
-  .blog-card .meta {
-    flex-basis: 40%;
-    height: auto;
-  }
-  .blog-card .description {
-    flex-basis: 60%;
-  }
-  .blog-card .description:before {
-    transform: skewX(-3deg);
-    content: "";
-    background: #fff;
-    width: 30px;
-    position: absolute;
-    left: -10px;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-  .blog-card.alt {
-    flex-direction: row-reverse;
-  }
-  .blog-card.alt .description:before {
-    left: inherit;
-    right: -10px;
-    transform: skew(3deg);
-  }
-  .blog-card.alt .details {
-    padding-left: 25px;
-  }  
-}
-
-    </style>
-  </head>
-  <body>
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <div class="preloader">
-      <div class="preloader-logo"><img src="./images/innovatech-solutions (1).png" alt="" width="200" height="100" srcset="./images/innovatech-solutions (1).png"/>
-      </div>
-      <div class="preloader-body">
-        <div id="loadingProgressG">
-          <div class="loadingProgressG" id="loadingProgressG_1"></div>
-        </div>
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader">
+    <div class="preloader-logo"><img src="./images/innovatech-solutions (1).png" alt="" width="200" height="100"
+        srcset="./images/innovatech-solutions (1).png" />
+    </div>
+    <div class="preloader-body">
+      <div id="loadingProgressG">
+        <div class="loadingProgressG" id="loadingProgressG_1"></div>
       </div>
     </div>
-    <div class="page">
-<!--  -->
-      <header class="section novi-background page-header">
-        <!-- RD Navbar-->
-        <div class="rd-navbar-wrap" ">
-          <nav style="background-color: rgba(245, 245, 245, 0.961);" class="rd-navbar rd-navbar-corporate" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-lg-stick-up-offset="118px" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-stick-up="true" data-xl-stick-up-offset="118px" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static" data-xxl-stick-up-offset="118px" data-xxl-stick-up="true">
-            <div class="rd-navbar-aside-outer">
-              <div class="rd-navbar-aside" style="  padding: 0;">
-                <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel" style="height: 130px;">
-                  <!-- RD Navbar Toggle-->
-                  <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
-                  <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index.html" ><img style="width: 100%; height: 100%;" src="./images/innovatech-solutions (1).png" alt="" /></a>
-                </div>
-                <div class="rd-navbar-collapse">
-                  <button class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle="#rd-navbar-collapse-content-1"><span></span></button>
-                  <div class="rd-navbar-collapse-content" id="rd-navbar-collapse-content-1">
-                    <article class="unit align-items-center">
-                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-phone" style="color: #F57D00;"></span></div>
-                      <div class="unit-body">
-                        <ul class="list-0">
-                          <li><a class="link-default" href="tel:305-487-2372">+57 3006304401</a></li>
-                        </ul>
-                      </div>
-                    </article>
-                    <article class="unit align-items-center">
-                      <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-map-marker"  style="color: #F57D00;"></span></div>
-                      <div class="unit-body"><a class="link-default" href="tel:#">Sabaneta, Medellin Colombia</a></div>
-                    </article><a class="button button-gray-bordered button-winona" href="/contact-es.html">Contáctenos</a>
+  </div>
+  <div class="page">
+    <header class="section novi-background page-header">
+      <!-- RD Navbar-->
+      <div class="rd-navbar-wrap">
+          <nav style=" background-color: rgba(245, 245, 245, 0.961);" class="rd-navbar rd-navbar-corporate"
+        data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed"
+        data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+        data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-lg-stick-up-offset="118px"
+        data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-xl-stick-up="true"
+        data-xl-stick-up-offset="118px" data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static"
+        data-xxl-stick-up-offset="118px" data-xxl-stick-up="true">
+        <div class="rd-navbar-aside-outer">
+          <div class="rd-navbar-aside" style="  padding: 0;">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel" style="height: 130px;">
+              <!-- RD Navbar Toggle-->
+              <button class="rd-navbar-toggle" data-rd-navbar-toggle="#rd-navbar-nav-wrap-1"><span></span></button>
+              <!-- RD Navbar Brand--><a class="rd-navbar-brand" href="index-es.html"><img
+                  style="width: 100%; height: 100%;" src="./images/innovatech-solutions (1).png" alt="" /></a>
+            </div>
+            <div class="rd-navbar-collapse">
+              <button class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
+                data-rd-navbar-toggle="#rd-navbar-collapse-content-1"><span></span></button>
+              <div class="rd-navbar-collapse-content" id="rd-navbar-collapse-content-1">
+                <article class="unit align-items-center">
+                  <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-phone"
+                      style="color: #F57D00;"></span></div>
+                  <div class="unit-body">
+                    <ul class="list-0">
+                      <li><a class="link-default" href="tel:305-487-2372"><p>+57 3006304401</p></a></li>
+                    </ul>
                   </div>
-                </div>
+                </article>
+                <article class="unit align-items-center">
+                  <div class="unit-left"><span class="icon novi-icon icon-md icon-modern mdi mdi-map-marker"
+                      style="color: #F57D00;"></span></div>
+                  <div class="unit-body"><a class="link-default" href="https://maps.app.goo.gl/pUtp9YEcCLjKiZRA7"><p>Sabaneta, Medellin Colombia</p></a></div>
+                </article><a class="button button-gray-bordered button-winona" href="/contact-es.html"><p></p>Contáctenos</a>
               </div>
             </div>
-            <div class="rd-navbar-main-outer " style="background-color: #212121c6; height: 65px;">
-              <div class="rd-navbar-main p-0" >
-                <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1" ">
+          </div>
+        </div>
+        <div class="rd-navbar-main-outer " style="background-color: #212121c6; height: 65px;">
+          <div class="rd-navbar-main p-0">
+            <div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
                   <!-- RD Navbar Nav-->
-                  <ul class="rd-navbar-nav" >
-                    <li class="rd-nav-item ov-btn-grow-skew active"><a class="miNavbarLink" href="index-es.html">Inicio</a>
-                    </li>
-                    <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink" href="about-us-es.html">Nosotros</a>
-                    </li>
-          
-                    <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink"  href="./support-es.html">Soporte</a>
-                    </li>
-                   
-                    <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink"  href="contact-es.html">Contacto</a>
-                    </li>
-  
-                      <li class="rd-nav-item ov-btn-grow-skew dropdown ">
-                        <button class="miNavbarLink btn dropdown-toggle bg-transparent sm:text-white dropdown_services" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Services
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="/services-residenctial-es.html"><i class="fa fa-home" aria-hidden="true" style="font-style: normal; margin-right: 10px;"></i>Servicios Residenciales</a>
-                          <a class="dropdown-item" href="/services-commercial-es.html"> <i class="fa fa-building" aria-hidden="true" style="font-style: normal; margin-right: 10px;"></i>Servicios Comerciales</a>
-                     
-                        </div>
-                      </li>
-                      </li>
-                      <li class="rd-nav-item" style="margin-left: 20px;"><a href="/index.html"><img class="icon-flag" style="width: 35px;" src="images/usa.png" alt=""></a><a style="margin-left: 10px;" href="/index-es.html"><img class="icon-flag" style="width: 35px;" src="images/spain.png" alt=""></a></li>
-                  </ul>
+                  <ul class=" rd-navbar-nav">
+              <li class="rd-nav-item ov-btn-grow-skew active"><a class="miNavbarLink" href="index-es.html"><p class="texto-gris">Inicio</p></a>
+              </li>
+              <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink" href="about-us-es.html"><p class="texto-gris">Nosotros</p></a></li>
+              <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink" href="./support-es.html"><p class="texto-gris  ">Soporte</p></a></li>
+              <li class="rd-nav-item ov-btn-grow-skew"><a class="miNavbarLink" href="contact-es.html"><p class="texto-gris">Contacto</p></a>
+              </li>
+              <li class="rd-nav-item ov-btn-grow-skew dropdown ">
+                <button class="miNavbarLink btn dropdown-toggle bg-transparent sm:text-white dropdown_services"
+                  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <p class="texto-blanco">Servicios</p>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="/services-residenctial-es.html" style="font-style: normal; margin-right: 10px; display: flex; align-items: center;">
+                    <i class="fa fa-home" style="margin-right: 10px;"></i>
+                    <p class="texto-negro" style="margin: 0;">Servicios Residenciales</p>
+                  </a>
+                  
+                  <a class="dropdown-item" href="/services-commercial-es.html" style="font-style: normal; margin-right: 10px; display: flex; align-items: center;">
+                    <i class="fa fa-building" style="margin-right: 10px;"></i>
+                    <p class="texto-negro" style="margin: 0;">Servicios Comerciales</p>
+                  </a>
+                      <a class="dropdown-item" href="/achievements-es.html" style="font-style: normal; margin-right: 10px; display: flex; align-items: center;">
+                        <i class="fa-solid fa-trophy" style="margin-right: 10px;"></i>
+                        <p class="texto-negro"  style="margin: 0;">Logros</p>
+                      </a>                                        
                 </div>
-              </div>
+              </li>
+              </li>
+              <li class="rd-nav-item" style="margin-left: 20px;"><a href="/index.html"><img class="icon-flag"
+                    style="width: 35px;" src="images/usa.png" alt=""></a><a style="margin-left: 10px;"
+                  href="/index-es.html"><img class="icon-flag" style="width: 35px;" src="images/spain.png" alt=""></a>
+              </li>
+              </ul>
             </div>
-          </nav>
+          </div>
         </div>
-      </header>
-
-
-      
-<section class="section swiper-container swiper-slider swiper-slider-minimal" data-loop="true" data-slide-effect="fade" data-autoplay="4759" data-simulate-touch="true">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide_video header" >
-            <div class="container">
-              <div class="jumbotron-classic-content">
-                <div class="wow-outer">
-                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Bienvenido</div>
-                </div>
-                <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">Somos Innovatech</span></h1>
-                <p class="text-white wow-outer " style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">Líderes en soluciones tecnológicas para su empresa o su hogar<!-- Count on us to bring the best automation solution for your home or business! -->
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section swiper-container swiper-slider swiper-slider-minimal" data-loop="true"
+      data-slide-effect="fade" data-autoplay="4759" data-simulate-touch="true">
+      <p></p>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide_video header">
+          <div class="container">
+            <div class="jumbotron-classic-content">
+              <div class="wow-outer">
+                <div
+                  class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">
+                  Bienvenido</div>
+              </div>
+              <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown"
+                  data-wow-delay=".2s">Somos Innovatech</span></h1>
+              <p class="text-white wow-outer " style="font-size: 26px;"><span class="wow slideInDown"
+                  data-wow-delay=".35s">Líderes en soluciones tecnológicas para su empresa o su
+                  hogar<!-- Count on us to bring the best automation solution for your home or business! -->
                 </span></p>
-                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#seccion-servicios" data-wow-delay=".4s">Servicios</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide header2" >
-            <div class="container">
-              <div class="jumbotron-classic-content">
-                <div class="wow-outer">
-                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Instalación De Camaras</div>
-                </div>
-
-                <p class="text-white wow-outer"  style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">Asegure su propiedad o negocio con nuestro servicio de instalación de cámaras de seguridad para proteger lo que más le importa.</span></p>
-                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#seccion-servicios" data-wow-delay=".4s">Servicios</a></div>
-
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide header3" >
-            <div class="container">
-              <div class="jumbotron-classic-content">
-                <div class="wow-outer">
-                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Automatión En Casa</div>
-                </div>
-              
-                <p class="text-white wow-outer"  style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">Cuando se trata de automatización somos los mejores, automatizamos completamente su hogar, también instalamos control de acceso, intercomunicadores y sistemas de seguridad de alta calidad.</span></p>
-                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#seccion-servicios" data-wow-delay=".4s">Servicios</a></div>
-
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide header4" >
-            <div class="container">
-              <div class="jumbotron-classic-content">
-                <div class="wow-outer">
-                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Audiovisual Instalations</div>
-                </div>
-                
-                <p class="text-white wow-outer"  style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">En Innovatech Solutions somos especialistas en integración audiovisual. Nos centramos en ofrecer a nuestros clientes productos de primera categoría, diseños inteligentes y un servicio de atención al cliente excepcional.</span></p>
-                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#seccion-servicios" data-wow-delay=".4s">Servicios</a></div>
-
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide header5" >
-            <div class="container">
-              <div class="jumbotron-classic-content">
-                <div class="wow-outer">
-                  <div class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">Mas de 15 años de</div>
-                </div>
-                <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown" data-wow-delay=".2s">Experiencia</span></h1>
-                <p class="text-white wow-outer"  style="font-size: 26px;"><span class="wow slideInDown" data-wow-delay=".35s">Con más de 15 años de experiencia en el mercado, nuestra empresa es un equipo de reconocidos expertos en soluciones tecnológicas y domótica</span></p>
-                <div class="wow-outer button-outer"><a class="button button-md button-primary button-winona wow slideInDown" href="#seccion-servicios" data-wow-delay=".4s">Servicios</a></div>
-
-              </div>
+              <div class="wow-outer button-outer"><a
+                  class="button button-md button-primary button-winona wow slideInDown" href="#seccion-servicios"
+                  data-wow-delay=".4s">Servicios</a></div>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination-outer container">
-          <div class="swiper-pagination swiper-pagination-modern swiper-pagination-marked" data-index-bullet="true"></div>
-        </div>
- </section>
-
-      
-
-<!------ Include the above in your HEAD tag ---------->
-<section style="height: auto ;width: 100%; margin: 80px auto;">
-  <div class="col">
-    <h2 class="section-heading wow slideInLeft" style="font-size: 33px;">SERVICES</h2>
-    <div class="m">
-      <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
-      <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
-      <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
-    </div>
-<!--     <div style="width: 330px; height: 3px; background-color: #F57D00;"></div>
- -->    <p class="wow slideInDown text-service" data-wow-delay=".2s">Somos una empresa con más de 15 años de experiencia en el mercado. Nos caracterizamos por nuestra profesionalidad y organización.</p>
-  </div>
-  <div class="row " data-wow-delay=".3s">
-    <div class="column">
-      <div class="card card1  wow fadeIn" data-wow-delay=".2s" style="width: 90%; margin: auto;">
-        <div class="icon-wrapper IconWrapper" >
-          <i class="fa fa-video-camera" aria-hidden="true" style="font-style: normal;" ></i>
-        </div>
-        <h4 class="font-weight-sbold text-gray-700">Sistemas De Seguridad</h4>
-        <p>
-          Garantice su seguridad con instalaciones de cámaras con expertos. Proteja lo más importante con nuestras soluciones de vigilancia de primera categoría.
-        </p>
-          <i class="fa-solid fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i>
-
-      </div>
-    </div>
-    <div class="column">
-      <div class="card card2  wow fadeIn" data-wow-delay=".4s" style="width: 90%; margin: auto;">
-        <div class="icon-wrapper IconWrapper">
-          <i class="fa fa-home" style="font-style: normal;"></i>
-        </div>
-        <h4 class="font-weight-sbold text-gray-700" >Automatización Del Hogar</h4>
-
-        <p>
-          Transforme su hogar con soluciones de automatización inteligentes. Experimente la comodidad y la eficiencia hoy mismo
-        </p>
-        <i class="fa-solid fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i>
-
-
-      </div>
-    </div>
-    <div class="column">
-      <div class="card card3  wow fadeIn" data-wow-delay=".6s" style="width: 90%; margin: auto;">
-        <div class="icon-wrapper IconWrapper">
-          <i class="fas fa-wrench"  style="font-style: normal;"></i>
-        </div>
-        <h4 class="font-weight-sbold text-gray-700">Técnicos De Teatro En Casa </h4>
-        <p>
-          Experimente el lujo del cine en casa. Eleve su entretenimiento con nuestra instalación profesional de cine en casa.
-        </p>
-       <a href="/services-commercial.html"> <i class="fa-regular fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i></a>
-
-      </div>
-    </div>
-    <div class="column">
-      <div class="card card4  wow fadeIn" data-wow-delay=".8s" style="width: 90%; margin: auto;">
-        <div class="icon-wrapper IconWrapper">
-          <i class="fas fa-car" style="font-style: normal;"></i>
-        </div>
-        <h4 class="font-weight-sbold text-gray-700" >Sistemas De Aceso</h4>
-        <p>
-          Proteja su hogar con un control de acceso avanzado. Confíe en nosotros para una protección inteligente.
-        </p>
-        <i class="fa-solid fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i>
-
-      </div>
-    </div>
-    <div class="column">
-      <div class="card card5  wow fadeIn" data-wow-delay="1s" style="width: 90%; margin: auto;">
-        <div class="icon-wrapper IconWrapper">
-          <i class="fa fa-wifi" aria-hidden="true"  style="font-style: normal;"></i>
-        </div>
-        <h4 class="font-weight-sbold text-gray-700">Fibra Optica y Red</h4>
-        <p>
-          Actualice su hogar o negocio con una instalación de fibra óptica y una configuración de red bastante rapida.
-        </p>
-        <i class="fa-solid fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i>
-        
-
-      </div>
-    </div>
-    <div class="column">
-      <div class="card card6 wow fadeIn" data-wow-delay="1.2s" style="width: 90%; margin: auto;">
-        <div class="icon-wrapper IconWrapper">
-          <i class="fas fa-plug" style="font-style: normal;"></i>
-        </div>
-        <h4 class="font-weight-sbold text-gray-700">Instalaciones Audiovisuales</h4>
-        <p>
-          Eleve su experiencia audiovisual con nuestros servicios. Sumérjase hoy mismo en un sonido y unos efectos visuales superiores
-        </p>
-          <i class="fa-solid fa-arrow-right" style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;" ></i>
-      </div>
-    </div>
-  </div>
-</section>
-      
-<section id="seccion-servicios" class="bsb-cta-1 px-2 bsb-overlay" style="height: auto; width: auto; padding: 100px 0px;background-image: url('/images/services-section.jpg');">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-6"  >
-        <h2 class="fs-5 mb-3 text-white text-uppercase">Nuestros Servicios</h2>
-        <h3 class="display-5 text-white mb-4">Disponemos de servicios tanto comerciales como residenciales, nuestras soluciones se adaptan a sus necesidades.</h3>
-     
-        <a class="button button-md button-primary button-winona wow slideInDown" href="/services-commercial-es.html" data-wow-delay=".4s">Comercial</a>
-        <a class="button button-md button-primary button-winona wow slideInDown" href="/services-residenctial-es.html" data-wow-delay=".4s">Residential</a>
-      </div>
-      <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-6 " style="display: flex; justify-content: center;" >
-        <img style="height: 500px; height: 350px;" src="./images/SolutionsA4_1 (4).gif" alt="">
-      </div>
-    </div>
-  </div>
-</section>
-
-      
-      <div style="position: relative; left: 0px; margin: 100px 15px 0px 60px;">
-        <h2 class="section-heading wow slideInLeft" style="font-size: 30px;">TESTIMONIOS
-        </h2>
-        <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
-        <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
-        <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
-      </div>
-
-      
-      <div class="novi-background text-center" >
-        <div class="container">
-         
-          <!-- Owl Carousel-->
-          <div class="owl-carousel wow fadeIn" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true" data-nav="false" data-loop="true" data-autoplay="true" data-autoplay-speed="731" data-autoplay-timeout="4268" data-margin="30" data-stage-padding="0" data-mouse-drag="false">
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="https://tse1.mm.bing.net/th?id=OIP.wU2TNRxk68paPBwCZ_MWNAHaHa&pid=Api&P=0&h=180" alt="" width="96" height="96"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Robert Diaz</cite>
-                  <p class="quote-classic-caption"  style="color: #F57D00;">Regular Client</p>
-                </div>
+        <div class="swiper-slide header2">
+          <div class="container">
+            <div class="jumbotron-classic-content">
+              <div class="wow-outer">
+                <div
+                  class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">
+                  Instalación De Camaras</div>
               </div>
-              <div class="quote-classic-text">
-                <p>Después de la compra de mi nueva casa contraté a Innovatech Solutions para diseñar un nuevo teatro y mejorar mi sistema de vigilancia de seguridad y debo decir que hicieron exactamente eso. Fue un placer trabajar con Danny.</p>
-              </div>
-            </blockquote>
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="https://tse3.mm.bing.net/th?id=OIP.hmrU5CcSbRtSe-of71jK0AAAAA&pid=Api&P=0&h=180" alt="" width="96" height="96"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Carolina Espinosa</cite>
-                  <p class="quote-classic-caption" style="color: #F57D00;">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>Después de una dura experiencia anterior con un integrador. Conocí a Danny e hice que su equipo de Innovatech Solutions rediseñara mi sistema Control4. Han cumplido con creces y se han asegurado de que toda mi casa funcione a las mil maravillas en una sola plataforma. No podría pedir más.</p>
-              </div>
-            </blockquote>
-            <blockquote class="quote-classic">
-              <div class="quote-classic-meta">
-                <div class="quote-classic-avatar"><img src="https://tse1.mm.bing.net/th?id=OIP.wU2TNRxk68paPBwCZ_MWNAHaHa&pid=Api&P=0&h=180" alt="" width="96" height="96"/>
-                </div>
-                <div class="quote-classic-info">
-                  <cite class="quote-classic-cite">Salomon Calu</cite>
-                  <p class="quote-classic-caption"  style="color: #F57D00;">Regular Client</p>
-                </div>
-              </div>
-              <div class="quote-classic-text">
-                <p>
-                  Innovatech Solutions diseñó toda mi red de negocios, control de acceso y sistemas de vigilancia. Déjenme decirles que son muy profesionales y conocedores, dignos de confianza. ¡Esta empresa fue increíble en el manejo de todo esto! Y lo mejor de todo es que también me ayudaron a modernizar mi casa. ¡La mejor compañía de A/V hasta ahora!
-                </p>
-              </div>
-            </blockquote>
-        
-          </div>
-        </div>
-      </div>
 
-    
-    <div class="slider" style="margin: 100px 30px;">
-      <h2 class="section-heading wow slideInLeft" style="font-size: 30px; padding-left: 30px;">NUESTROS SOCIOS CERTIFICADOS
-      </h2>
-      <div class="m" style="padding-left: 30px;">
-        <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
-        <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
-        <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
-      </div>
-      <div class="slide-track" style="height: 90px; margin-top: 50px;">
-          <div class="slide" >
-              <img src="https://www.lvtec.fr/wp-content/uploads/images/axis-logo.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="/images/brands/down.png" alt="">
-          </div>
-          <div class="slide">
-            <img src="/images/brands/elan-Logo.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="images/brands/MikroTik-logo.jpg" alt="">
-          </div>
-          <div class="slide">
-            <div class="slide">
-              <img src="images/brands/lutron.png" alt="">
+              <p class="text-white wow-outer" style="font-size: 26px;"><span class="wow slideInDown"
+                  data-wow-delay=".35s">Asegure su propiedad o negocio con nuestro servicio de instalación de cámaras de
+                  seguridad para proteger lo que más le importa.</span></p>
+              <div class="wow-outer button-outer"><a
+                  class="button button-md button-primary button-winona wow slideInDown" href="#seccion-servicios"
+                  data-wow-delay=".4s">Servicios</a></div>
+
             </div>
-            <img src="/images/brands/control4.png" alt="">
           </div>
-     
-      </div>
-  </div>
-    <div class="slider2" style="height: 90px; margin-bottom: 130px;">
-      <div class="slide-track" style="height: 90px;">
-          <div class="slide" >
-              <img src="/images/brands/nortek.jpg" >
-          </div>
-        
-          <div class="slide">
-              <img src="/images/brands/pakedge_logo_color.jpg" alt="">
-          </div>
-          <div class="slide">
-              <img src="/images/brands/skyvuecom.jpg" alt="">
-          </div>
-          <div class="slide">
-              <img src="images/brands/snapone.svg" alt="">
-          </div>
-          <div class="slide">
-              <img src="images/brands/triad_logo_color_color.jpg" alt="">
-          </div>
-      </div>
-  </div>
+        </div>
+        <div class="swiper-slide header3">
+          <div class="container">
+            <div class="jumbotron-classic-content">
+              <div class="wow-outer">
+                <div
+                  class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">
+                  Automatión En Casa</div>
+              </div>
 
-    <div  style=" padding: 50px 30px;;background-image: url(https://www.sourcesecurity.com/img/inner-main-bg.jpg); background-size: cover; background-repeat: no-repeat; padding-top: 100px; height: auto;">
+              <p class="text-white wow-outer" style="font-size: 26px;"><span class="wow slideInDown"
+                  data-wow-delay=".35s">Cuando se trata de automatización somos los mejores, automatizamos completamente
+                  su hogar, también instalamos control de acceso, intercomunicadores y sistemas de seguridad de alta
+                  calidad.</span></p>
+              <div class="wow-outer button-outer"><a
+                  class="button button-md button-primary button-winona wow slideInDown" href="#seccion-servicios"
+                  data-wow-delay=".4s">Servicios</a></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide header4">
+          <div class="container">
+            <div class="jumbotron-classic-content">
+              <div class="wow-outer">
+                <div
+                  class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">
+                  Audiovisual Instalations</div>
+              </div>
+
+              <p class="text-white wow-outer" style="font-size: 26px;"><span class="wow slideInDown"
+                  data-wow-delay=".35s">En Innovatech Solutions somos especialistas en integración audiovisual. Nos
+                  centramos en ofrecer a nuestros clientes productos de primera categoría, diseños inteligentes y un
+                  servicio de atención al cliente excepcional.</span></p>
+              <div class="wow-outer button-outer"><a
+                  class="button button-md button-primary button-winona wow slideInDown" href="#seccion-servicios"
+                  data-wow-delay=".4s">Servicios</a></div>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide header5">
+          <div class="container">
+            <div class="jumbotron-classic-content">
+              <div class="wow-outer">
+                <div
+                  class="title-docor-text font-weight-bold title-decorated text-uppercase wow slideInLeft text-white">
+                  Mas de 15 años de</div>
+              </div>
+              <h1 class="text-uppercase text-white font-weight-bold wow-outer"><span class="wow slideInDown"
+                  data-wow-delay=".2s">Experiencia</span></h1>
+              <p class="text-white wow-outer" style="font-size: 26px;"><span class="wow slideInDown"
+                  data-wow-delay=".35s">Con más de 15 años de experiencia en el mercado, nuestra empresa es un equipo de
+                  reconocidos expertos en soluciones tecnológicas y domótica</span></p>
+              <div class="wow-outer button-outer"><a
+                  class="button button-md button-primary button-winona wow slideInDown" href="#seccion-servicios"
+                  data-wow-delay=".4s">Servicios</a></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination-outer container">
+        <div class="swiper-pagination swiper-pagination-modern swiper-pagination-marked" data-index-bullet="true"></div>
+      </div>
+    </section>
+
+
+
+    <!------ Include the above in your HEAD tag ---------->
+    <section style="height: auto ;width: 100%; margin: 80px auto;">
       <div class="col">
-        <h2 class="section-heading wow slideInLeft" style="font-size: 32px;">OFICINAS</h2>
+        <h2 class="section-heading wow slideInLeft" style="font-size: 33px;">Servicios</h2>
         <div class="m">
-          <span style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;" ></span>
-          <span style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
-          <span style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
+          <span
+            style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+          <span
+            style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+          <span
+            style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
         </div>
+        <!--     <div style="width: 330px; height: 3px; background-color: #F57D00;"></div>
+ -->
+        <p class="wow slideInDown text-service" data-wow-delay=".2s">Somos una empresa con más de 15 años de experiencia
+          en el mercado. Nos caracterizamos por nuestra profesionalidad y organización.</p>
       </div>
-      <div class="blog-card" style="height: 250px;">
-          <div class="meta">
-            <div class="photo" style="background-image: url(https://img1.wsimg.com/isteam/ip/abcfa291-e671-41db-b8b6-51d856ec39b3/s2.jpg/:/rs=w:1440,h:1440)"></div>
-            
-          </div>
-          <div class="description">
-            <h1>Sur de Florida</h1>
-            <h2>Officina Principal</h2>
-            <p>¡Nuestra oficina principal, que actualmente sirve a toda la ubicación del sur de Florida y de todo el mundo!</p>
-            
-          </div>
-        </div>
-        <div class="blog-card alt" style=" height: 250px;">
-          <div class="meta">
-            <div class="photo" style="background-image: url('https://media-private.canva.com/MABkmi_2CuE/2/screen_2x.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20231010%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231010T201118Z&X-Amz-Expires=97311&X-Amz-Signature=f16d2897a5f7edda2ad51fb2c4ae3f9b85137707249fbd4a11abf81f16f5df6d&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2011%20Oct%202023%2023%3A13%3A09%20GMT')"></div>
-            
-          </div>
-          <div class="description">
-            <h1>Medellin, Colombia</h1>
-            <h2>Segundo Centro de Operaciones</h2>
-            <p>¡Nuestra ubicación secundaria diseñando nuevos proyectos y sistemas en el corazón de Medellín Colombia!</p>
+      <div class="row " data-wow-delay=".3s">
+        <div class="column">
+          <div class="card card1  wow fadeIn" data-wow-delay=".2s" style="width: 90%; margin: auto;">
+            <div class="icon-wrapper IconWrapper">
+              <i class="fa fa-video-camera" aria-hidden="true" style="font-style: normal;"></i>
+            </div>
+            <h4 class="font-weight-sbold text-gray-700">Sistemas De Seguridad</h4>
+            <p>
+              Garantice su seguridad con instalaciones de cámaras con expertos. Proteja lo más importante con nuestras
+              soluciones de vigilancia de primera categoría.
+            </p>
+            <i class="fa-solid fa-arrow-right"
+              style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;"></i>
+
           </div>
         </div>
-  </div>
-    <!-- Call To Action 2 - Bootstrap Brain Component -->
-    <section class="bsb-cta-1 px-2 bsb-overlay" style="margin-top: 100px;background:linear-gradient(0deg, rgba(6, 212, 112, 0.767), rgba(2, 236, 72, 0.685)) ,url('/images/contact.jpg');
-     background-repeat:no-repeat; background-size: cover; background-position: center;height: 400px;">
-      <div class="container" >
-        <div class="row">
-          <div class="col-12 " style="display: flex; flex-direction: column; align-items: center; justify-items: center;" >
-            <h2 class="fs-5 mb-3 text-white text-uppercase">Comencemos!</h2>
-            <h3 class="display-5 text-white mb-4">¿Listo para empezar? Póngase en contacto con nosotros y descubra cómo podemos ayudarle.</h3>
-         
-            <a class="button button-md button-primary button-winona wow slideInDown" href="/contact.html" data-wow-delay=".4s">Contacto</a>
+        <div class="column">
+          <div class="card card2  wow fadeIn" data-wow-delay=".4s" style="width: 90%; margin: auto;">
+            <div class="icon-wrapper IconWrapper">
+              <i class="fa fa-home" style="font-style: normal;"></i>
+            </div>
+            <h4 class="font-weight-sbold text-gray-700">Automatización Del Hogar</h4>
+
+            <p>
+              Transforme su hogar con soluciones de automatización inteligentes. Experimente la comodidad y la
+              eficiencia hoy mismo
+            </p>
+            <i class="fa-solid fa-arrow-right"
+              style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;"></i>
+
+
           </div>
-          
+        </div>
+        <div class="column">
+          <div class="card card3  wow fadeIn" data-wow-delay=".6s" style="width: 90%; margin: auto;">
+            <div class="icon-wrapper IconWrapper">
+              <i class="fas fa-wrench" style="font-style: normal;"></i>
+            </div>
+            <h4 class="font-weight-sbold text-gray-700">Técnicos De Teatro En Casa </h4>
+            <p>
+              Experimente el lujo del cine en casa. Eleve su entretenimiento con nuestra instalación profesional de cine
+              en casa.
+            </p>
+            <a href="/services-commercial.html"> <i class="fa-regular fa-arrow-right"
+                style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;"></i></a>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="card card4  wow fadeIn" data-wow-delay=".8s" style="width: 90%; margin: auto;">
+            <div class="icon-wrapper IconWrapper">
+              <i class="fas fa-car" style="font-style: normal;"></i>
+            </div>
+            <h4 class="font-weight-sbold text-gray-700">Sistemas De Aceso</h4>
+            <p>
+              Proteja su hogar con un control de acceso avanzado. Confíe en nosotros para una protección inteligente.
+            </p>
+            <i class="fa-solid fa-arrow-right"
+              style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;"></i>
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="card card5  wow fadeIn" data-wow-delay="1s" style="width: 90%; margin: auto;">
+            <div class="icon-wrapper IconWrapper">
+              <i class="fa fa-wifi" aria-hidden="true" style="font-style: normal;"></i>
+            </div>
+            <h4 class="font-weight-sbold text-gray-700">Fibra Optica y Red</h4>
+            <p>
+              Actualice su hogar o negocio con una instalación de fibra óptica y una configuración de red bastante
+              rapida.
+            </p>
+            <i class="fa-solid fa-arrow-right"
+              style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;"></i>
+
+
+          </div>
+        </div>
+        <div class="column">
+          <div class="card card6 wow fadeIn" data-wow-delay="1.2s" style="width: 90%; margin: auto;">
+            <div class="icon-wrapper IconWrapper">
+              <i class="fas fa-plug" style="font-style: normal;"></i>
+            </div>
+            <h4 class="font-weight-sbold text-gray-700">Instalaciones Audiovisuales</h4>
+            <p>
+              Eleve su experiencia audiovisual con nuestros servicios. Sumérjase hoy mismo en un sonido y unos efectos
+              visuales superiores
+            </p>
+            <i class="fa-solid fa-arrow-right"
+              style="display: flex; position: absolute; color: #F57D00; bottom: 10px; right: 30px;"></i>
+          </div>
         </div>
       </div>
     </section>
-     <!--  <a class="banner" hre://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_big_02.jpg" alt=""/></a> -->
-     <footer class="section novi-background footer-advanced bg-gray-700">
+
+    <section id="seccion-servicios" class="bsb-cta-1 px-2 bsb-overlay"
+      style="height: auto; width: auto; padding: 100px 0px;background-image: url('/images/services-section.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-8 col-lg-8 col-xl-8 col-xxl-6">
+            <h2 class="fs-5 mb-3 text-white text-uppercase">Nuestros Servicios</h2>
+            <h3 class="display-5 text-white mb-4">Disponemos de servicios tanto comerciales como residenciales, nuestras
+              soluciones se adaptan a sus necesidades.</h3>
+
+            <a class="button button-md button-primary button-winona wow slideInDown" href="/services-commercial-es.html"
+              data-wow-delay=".4s">Comercial</a>
+            <a class="button button-md button-primary button-winona wow slideInDown"
+              href="/services-residenctial-es.html" data-wow-delay=".4s">Residential</a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-6 " style="display: flex; justify-content: center;">
+            <img style="height: 500px; height: 350px;" src="./images/SolutionsA4_1 (4).gif" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div style="position: relative; left: 0px; margin: 100px 15px 0px 60px;">
+      <h2 class="section-heading wow slideInLeft" style="font-size: 30px;">TESTIMONIOS
+      </h2>
+      <span
+        style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+      <span
+        style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+      <span
+        style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
+    </div>
+
+
+    <div class="novi-background text-center">
+      <div class="container">
+
+        <!-- Owl Carousel-->
+        <div class="owl-carousel wow fadeIn" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true"
+          data-nav="false" data-loop="true" data-autoplay="true" data-autoplay-speed="731" data-autoplay-timeout="4268"
+          data-margin="30" data-stage-padding="0" data-mouse-drag="false">
+          <blockquote class="quote-classic">
+            <div class="quote-classic-meta">
+              <div class="quote-classic-avatar"><img
+                  src="https://tse1.mm.bing.net/th?id=OIP.wU2TNRxk68paPBwCZ_MWNAHaHa&pid=Api&P=0&h=180" alt=""
+                  width="96" height="96" />
+              </div>
+              <div class="quote-classic-info">
+                <cite class="quote-classic-cite">Robert Diaz</cite>
+                <p class="quote-classic-caption" style="color: #F57D00;">Regular Client</p>
+              </div>
+            </div>
+            <div class="quote-classic-text">
+              <p>Después de la compra de mi nueva casa contraté a Innovatech Solutions para diseñar un nuevo teatro y
+                mejorar mi sistema de vigilancia de seguridad y debo decir que hicieron exactamente eso. Fue un placer
+                trabajar con Danny.</p>
+            </div>
+          </blockquote>
+          <blockquote class="quote-classic">
+            <div class="quote-classic-meta">
+              <div class="quote-classic-avatar"><img
+                  src="https://tse3.mm.bing.net/th?id=OIP.hmrU5CcSbRtSe-of71jK0AAAAA&pid=Api&P=0&h=180" alt=""
+                  width="96" height="96" />
+              </div>
+              <div class="quote-classic-info">
+                <cite class="quote-classic-cite">Carolina Espinosa</cite>
+                <p class="quote-classic-caption" style="color: #F57D00;">Regular Client</p>
+              </div>
+            </div>
+            <div class="quote-classic-text">
+              <p>Después de una dura experiencia anterior con un integrador. Conocí a Danny e hice que su equipo de
+                Innovatech Solutions rediseñara mi sistema Control4. Han cumplido con creces y se han asegurado de que
+                toda mi casa funcione a las mil maravillas en una sola plataforma. No podría pedir más.</p>
+            </div>
+          </blockquote>
+          <blockquote class="quote-classic">
+            <div class="quote-classic-meta">
+              <div class="quote-classic-avatar"><img
+                  src="https://tse1.mm.bing.net/th?id=OIP.wU2TNRxk68paPBwCZ_MWNAHaHa&pid=Api&P=0&h=180" alt=""
+                  width="96" height="96" />
+              </div>
+              <div class="quote-classic-info">
+                <cite class="quote-classic-cite">Salomon Calu</cite>
+                <p class="quote-classic-caption" style="color: #F57D00;">Regular Client</p>
+              </div>
+            </div>
+            <div class="quote-classic-text">
+              <p>
+                Innovatech Solutions diseñó toda mi red de negocios, control de acceso y sistemas de vigilancia. Déjenme
+                decirles que son muy profesionales y conocedores, dignos de confianza. ¡Esta empresa fue increíble en el
+                manejo de todo esto! Y lo mejor de todo es que también me ayudaron a modernizar mi casa. ¡La mejor
+                compañía de A/V hasta ahora!
+              </p>
+            </div>
+          </blockquote>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="slider" style="margin: 100px 30px;">
+      <h2 class="section-heading wow slideInLeft" style="font-size: 30px; padding-left: 30px;">NUESTROS SOCIOS
+        CERTIFICADOS
+      </h2>
+      <div class="m" style="padding-left: 30px;">
+        <span
+          style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+        <span
+          style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+        <span
+          style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
+      </div>
+      <div class="slide-track" style="height: 90px; margin-top: 50px;">
+        <div class="slide">
+          <img src="https://www.lvtec.fr/wp-content/uploads/images/axis-logo.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="/images/brands/down.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="/images/brands/elan-Logo.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/brands/MikroTik-logo.jpg" alt="">
+        </div>
+        <div class="slide">
+          <div class="slide">
+            <img src="images/brands/lutron.png" alt="">
+          </div>
+          <img src="/images/brands/control4.png" alt="">
+        </div>
+
+      </div>
+    </div>
+    <div class="slider2" style="height: 90px; margin-bottom: 130px;">
+      <div class="slide-track" style="height: 90px;">
+        <div class="slide">
+          <img src="/images/brands/nortek.jpg">
+        </div>
+
+        <div class="slide">
+          <img src="/images/brands/pakedge_logo_color.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="/images/brands/skyvuecom.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/brands/snapone.svg" alt="">
+        </div>
+        <div class="slide">
+          <img src="images/brands/triad_logo_color_color.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div
+      style=" padding: 50px 30px;;background-image: url(https://www.sourcesecurity.com/img/inner-main-bg.jpg); background-size: cover; background-repeat: no-repeat; padding-top: 100px; height: auto;">
+      <div class="col">
+        <h2 class="section-heading wow slideInLeft" style="font-size: 32px;">OFICINAS</h2>
+        <div class="m">
+          <span
+            style="display: inline-block; width: 200px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+          <span
+            style="display: inline-block; width: 30px; height: 6px; background-color: #F57D00; border-radius: 20px;"></span>
+          <span
+            style="display: inline-block; width: 10px; height: 6px; background-color: #F57D00; border-radius: 20px;;"></span>
+        </div>
+      </div>
+      <div class="blog-card" style="height: 250px;">
+        <div class="meta">
+          <div class="photo"
+            style="background-image: url(https://img1.wsimg.com/isteam/ip/abcfa291-e671-41db-b8b6-51d856ec39b3/s2.jpg/:/rs=w:1440,h:1440)">
+          </div>
+        </div>
+        <div class="description">
+          <h1>Sur de Florida</h1>
+          <h2>Officina Principal</h2>
+          <p>¡Nuestra oficina principal, que actualmente sirve a toda la ubicación del sur de Florida y de todo el
+            mundo!</p>
+
+        </div>
+      </div>
+      <div class="blog-card alt" style=" height: 250px;">
+        <div class="meta">
+          <div class="photo"
+            style="background-image: url('https://media-private.canva.com/MABkmi_2CuE/2/screen_2x.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJWF6QO3UH4PAAJ6Q%2F20231010%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231010T201118Z&X-Amz-Expires=97311&X-Amz-Signature=f16d2897a5f7edda2ad51fb2c4ae3f9b85137707249fbd4a11abf81f16f5df6d&X-Amz-SignedHeaders=host&response-expires=Wed%2C%2011%20Oct%202023%2023%3A13%3A09%20GMT')">
+          </div>
+
+        </div>
+        <div class="description">
+          <h1>Medellin, Colombia</h1>
+          <h2>Segundo Centro de Operaciones</h2>
+          <p>¡Nuestra ubicación secundaria diseñando nuevos proyectos y sistemas en el corazón de Medellín Colombia!</p>
+        </div>
+      </div>
+    </div>
+    <!-- Call To Action 2 - Bootstrap Brain Component -->
+    <section class="bsb-cta-1 px-2 bsb-overlay" style="margin-top: 100px;background:linear-gradient(0deg, rgba(6, 212, 112, 0.767), rgba(2, 236, 72, 0.685)) ,url('/images/contact.jpg');
+     background-repeat:no-repeat; background-size: cover; background-position: center;height: 400px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 "
+            style="display: flex; flex-direction: column; align-items: center; justify-items: center;">
+            <h2 class="fs-5 mb-3 text-white text-uppercase">Comencemos!</h2>
+            <h3 class="display-5 text-white mb-4">¿Listo para empezar? Póngase en contacto con nosotros y descubra cómo
+              podemos ayudarle.</h3>
+
+            <a class="button button-md button-primary button-winona wow slideInDown" href="/contact.html"
+              data-wow-delay=".4s">Contacto</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--  <a class="banner" hre://www.templatemonster.com/intense-multipurpose-html-template.html" target="_blank"><img src="images/intense_big_02.jpg" alt=""/></a> -->
+    </main>
+    
+    <footer class="section novi-background footer-advanced bg-gray-700">
       <div class="footer-advanced-main">
         <div class="container">
           <div class="row row-50">
             <div class="col-lg-4">
               <h5 class="font-weight-bold text-uppercase text-white">Sobre Nosotros</h5>
               <p class="footer-advanced-text">
-                Innovatech Solutions es una empresa líder en soluciones tecnológicas para su hogar o negocio. Trabajamos con pasión para brindarle el mejor servicio de la mano de profesionales altamente capacitados y tecnología de punta.
+                Innovatech Solutions es una empresa líder en soluciones tecnológicas para su hogar o negocio. Trabajamos
+                con pasión para brindarle el mejor servicio de la mano de profesionales altamente capacitados y
+                tecnología de punta.
 
               </p>
             </div>
             <div class="col-sm-7 col-md-5 col-lg-4">
               <h5 class="font-weight-bold text-uppercase text-white">INFORMACIÓN DE CONTACTO</h5>
               <ul>
-                <li style="display: flex; flex-direction: row; margin: 10px; align-items: center;"><i class="fa-solid fa-phone " style="margin-right: 10px; font-size: 25px;"></i> <span style="display: flex; flex-direction: column;"> <span style="font-weight: 600; ">Ubicación </span><span>Medellín, Sabaneta</span></span> </li>
-                <li style="display: flex; flex-direction: row; margin: 10px; align-items: center;"><i class="fa-regular fa-globe " style="margin-right: 10px; font-size: 25px;"></i> <span style="display: flex; flex-direction: column;"> <span style="font-weight: 600; ">Telefono</span><span>(+57)300-630-4401</span></span> </li>
-                <li style="display: flex; flex-direction: row; margin: 10px; align-items: center;"><i class="fa-regular fa-envelope" style="margin-right: 10px; font-size: 25px;"></i> <span style="display: flex; flex-direction: column;"> <span style="font-weight: 600; ">Correo</span><span>danny@innovatechcorp.net</span></span> </li>
-              
-            
+                <li style="display: flex; flex-direction: row; margin: 10px; align-items: center;"><i
+                    class="fa-solid fa-phone " style="margin-right: 10px; font-size: 25px;"></i> <span
+                    style="display: flex; flex-direction: column;"> <span style="font-weight: 600; ">Ubicación
+                    </span><span>Medellín, Sabaneta</span></span> </li>
+                <li style="display: flex; flex-direction: row; margin: 10px; align-items: center;"><i
+                    class="fa-regular fa-globe " style="margin-right: 10px; font-size: 25px;"></i> <span
+                    style="display: flex; flex-direction: column;"> <span
+                      style="font-weight: 600; ">Telefono</span><span>(+57)300-630-4401</span></span> </li>
+                <li style="display: flex; flex-direction: row; margin: 10px; align-items: center;"><i
+                    class="fa-regular fa-envelope" style="margin-right: 10px; font-size: 25px;"></i> <span
+                    style="display: flex; flex-direction: column;"> <span
+                      style="font-weight: 600; ">Correo</span><span>danny@innovatechcorp.net</span></span> </li>
+
+
               </ul>
-            
+
             </div>
             <div class="col-sm-5 col-md-7 col-lg-4">
               <h5 class="font-weight-bold text-uppercase text-white">Galería</h5>
               <div class="row row-x-10" data-lightgallery="group">
-                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer1.jpeg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer1.jpeg" alt=""/>
-                    <div class="thumbnail-minimal-caption"></div></a></div>
-                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer2.jpeg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer2.jpeg" alt=""/>
-                    <div class="thumbnail-minimal-caption"></div></a></div>
-                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer3.jpeg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer3.jpeg" alt=""/>
-                    <div class="thumbnail-minimal-caption"></div></a></div>
-                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer4.jpeg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer4.jpeg" alt=""/>
-                    <div class="thumbnail-minimal-caption"></div></a></div>
-                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer5.jpg"" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer5.jpg" alt=""/>
-                    <div class="thumbnail-minimal-caption"></div></a></div>
-                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer6.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer6.jpg" alt=""/>
-                    <div class="thumbnail-minimal-caption"> </div></a></div>
-                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer7.jpg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer7.jpg" alt=""/>
-                    <div class="thumbnail-minimal-caption"></div></a></div>
-                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer8.jpeg" data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer8.jpeg" alt=""/>
-                    <div class="thumbnail-minimal-caption"></div></a></div>
+                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer1.jpeg"
+                    data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer1.jpeg" alt="" />
+                    <div class="thumbnail-minimal-caption"></div>
+                  </a></div>
+                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer2.jpeg"
+                    data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer2.jpeg" alt="" />
+                    <div class="thumbnail-minimal-caption"></div>
+                  </a></div>
+                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer3.jpeg"
+                    data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer3.jpeg" alt="" />
+                    <div class="thumbnail-minimal-caption"></div>
+                  </a></div>
+                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer4.jpeg"
+                    data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer4.jpeg" alt="" />
+                    <div class="thumbnail-minimal-caption"></div>
+                  </a></div>
+                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal"
+                    href="/images/footer5.jpg"" data-lightgallery=" item"><img class="thumbnail-minimal-image"
+                      src="/images/footer5.jpg" alt="" />
+                    <div class="thumbnail-minimal-caption"></div>
+                  </a></div>
+                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer6.jpg"
+                    data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer6.jpg" alt="" />
+                    <div class="thumbnail-minimal-caption"> </div>
+                  </a></div>
+                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer7.jpg"
+                    data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer7.jpg" alt="" />
+                    <div class="thumbnail-minimal-caption"></div>
+                  </a></div>
+                <div class="col-3 col-sm-4 col-md-3"><a class="thumbnail-minimal" href="/images/footer8.jpeg"
+                    data-lightgallery="item"><img class="thumbnail-minimal-image" src="/images/footer8.jpeg" alt="" />
+                    <div class="thumbnail-minimal-caption"></div>
+                  </a></div>
               </div>
             </div>
           </div>
@@ -763,7 +643,7 @@
         <div class="container">
           <div class="footer-advanced-layout">
             <div>
-              <ul class="list-nav"> 
+              <ul class="list-nav">
                 <li><a href="index-es.html">Inicio</a></li>
                 <li><a href="about-us-es.html">Nosotros</a></li>
                 <li><a href="services-residenctial-es.html">Residencial</a></li>
@@ -773,11 +653,12 @@
               </ul>
             </div>
             <!--use of font awesome for the icons of the footer || uso de font awesome para el footer-->
-            <div> 
+            <div>
               <ul class="foter-social-links list-inline list-inline-md">
                 <li><a href="https://www.facebook.com/innovatechthefirm"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://twitter.com/home"><i class="fa-brands fa-twitter"></i> </a></li>
-                <li><a href="https://www.instagram.com/innovatech_projects/?hl=es"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.instagram.com/innovatech_projects/?hl=es"><i
+                      class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://www.tiktok.com/@innovatechsolutions"><i class="fa-brands fa-tiktok"></i></a></li>
               </ul>
             </div>
@@ -785,22 +666,26 @@
         </div>
       </div>
       <div class="container">
-        <hr/>
+        <hr />
       </div>
       <div class="footer-advanced-aside">
         <div class="container">
-          <div class="footer-advanced-layout"><a class="brand" href="index.html"><img src="images/innovatech-solutions (1).png" alt="" width="170" height="34" srcset="/images/innovatech-solutions (1).png"/></a>
+          <div class="footer-advanced-layout"><a class="brand" href="index.html"><img
+                src="images/innovatech-solutions (1).png" alt="" width="170" height="34"
+                srcset="/images/innovatech-solutions (1).png" /></a>
             <!-- Rights-->
-            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Todos los derechos reservados. Diseñado por <a href="">Innovatech Solutions</a></p>
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>. Todos los derechos
+              reservados. Diseñado por <a href="">Innovatech Solutions</a></p>
           </div>
         </div>
       </div>
     </footer>
-    </div>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+  </div>
+  <!-- Global Mailform Output-->
+  <div class="snackbars" id="form-output-global"></div>
+  <!-- Javascript-->
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
