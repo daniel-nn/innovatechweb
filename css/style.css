@@ -22,6 +22,7 @@
 
 }
 
+
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 * {
   padding: 0;
@@ -86,6 +87,10 @@ p {
 	height: 50px;
 	width: 50px;
 }
+
+
+
+
 .card1:hover {
 	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/index/services/services1.jpg);
 	
@@ -203,18 +208,35 @@ p {
 	color: rgb(255, 255, 255);
   }
 
-  .infoService{
-	width: 140px; height: 40px; display: flex; align-items: center; margin: 10px 10px 10px 10px;
-	
-  }
-  .infoService a{
+  .infoService {
+    width: 140px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 15px 20px 15px 15px; /* Añade más padding a la derecha para expandir hacia la derecha */
+    transition: background-color 0.3s; /* Agregar transición al color de fondo */
+    position: relative; /* Agrega posición relativa al elemento */
+}
 
-	color: #ec720f; font-weight: 400;
-  }
-  .infoService a:hover{
+.infoService a {
+    color: #ec720f;
+    font-weight: 400;
+}
 
-	color: #eeeeee; font-weight: 400;
-  }
+.infoService .icon {
+    margin-right: 200px; /* Margen a la derecha para el icono */
+    color: #ec720f; /* Color predeterminado del icono */
+}
+
+.infoService:hover {
+    background-color: #ec720f; /* Cambiar el color de fondo al pasar el mouse */
+    padding-right: 20px; /* Ajustar el padding a la derecha en el estado hover */
+}
+
+.infoService:hover .icon {
+    color: #eeeeee; /* Cambiar el color del icono al pasar el mouse */
+}
 
 @media screen and (min-width: 768px) {
   section {
@@ -5866,7 +5888,12 @@ html:not(.tablet):not(.mobile) .thumbnail-indigo:hover .thumbnail-indigo-caption
 }
 
 .rights {
-	color: #74757f;
+    color: #74757f; /* Color predeterminado */
+    transition: color 0.3s; /*transición suave de color */
+}
+
+.rights:hover {
+    color: #f56126; /* Cambiar el color a naranja al pasar el mouse */
 }
 
 .footer-minimal .rights {
@@ -9381,6 +9408,7 @@ html:not(.lt-ie10) .not-animated {
 	transition: .3s all ease;
 	pointer-events: none;
 	backface-visibility: hidden;
+	
 }
 
 .preloader::before, .preloader::after {
@@ -9426,7 +9454,7 @@ html:not(.lt-ie10) .not-animated {
 
 .preloader-logo,
 .preloader-body {
-	transition: 0s .2s;
+	transition: 0s .9s;
 }
 
 .preloader-logo {

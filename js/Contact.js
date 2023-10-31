@@ -7,7 +7,6 @@ function sendMail(event){
         message: document.getElementById("messaje").value,
         phone: document.getElementById("phone").value
     }
-    console.log("Hola")
     emailjs.send("service_2dwjuz9", "template_yb9kd2r", params)
     .then((res) => {
             console.log(res)
@@ -18,5 +17,4 @@ function sendMail(event){
           document.getElementById("messaje").value=""
         })
         .catch((err) => console.log(err))
-
 }
