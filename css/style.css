@@ -18162,6 +18162,9 @@ margin: auto;
 overflow: hidden;
 }
 
+
+/*Inicio colores para algunos textos*/
+
 .texto-footer{
 	color: rgb(175, 170, 190);
 }
@@ -18194,6 +18197,8 @@ overflow: hidden;
 	color:#000
 
 }  
+
+/*Fin colores para algunos textos*/
 
 .slider .slide-track {
 display: flex;
