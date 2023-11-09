@@ -55,34 +55,39 @@ const openModal10 = () => {
     windowBackground10.style.display = 'flex';
 }
 
+//   windowContainer.classList.add('close');
+//   setTimeout(() => {
+//     windowContainer.classList.remove('close');
+//     windowBackground.style.display = 'none';
+//   }, 1000);
+    
+    const closeWindow = () => {
+        for (const element of elementos) {
+            element.style.display = 'none'
+        }
+    };
 
-const closeWindow = () => {
-    //   windowContainer.classList.add('close');
-    //   setTimeout(() => {
-    //     windowContainer.classList.remove('close');
-    //     windowBackground.style.display = 'none';
-    //   }, 1000);
-    for (var i = 0; i < elementos.length; i++) {
-        elementos[i].style.display = 'none'
+
+    for (let i = 0; i < closeButtons.length; i++) {
+        elementos[i].addEventListener('click', closeWindow)
     }
-};
-
-for (var i = 0; i < closeButtons.length; i++) {
-    elementos[i].addEventListener('click', closeWindow)
-}
-openButton1.addEventListener('click', openModal1);
-openButton2.addEventListener('click', openModal2);
-openButton3.addEventListener('click', openModal3);
-openButton4.addEventListener('click', openModal4);
-openButton5.addEventListener('click', openModal5);
-openButton6.addEventListener('click', openModal6);
-openButton7.addEventListener('click', openModal7);
-openButton8.addEventListener('click', openModal8);
-openButton9.addEventListener('click', openModal9);
-openButton10.addEventListener('click', openModal10);
-
 // windowBackground.addEventListener('click', (e) => {
 //   if (e.target === windowBackground) {
 //     closeWindow();
 //   }
 // });
+
+if (window.location.pathname === '/about-us-es.html') {
+    openButton1.addEventListener('click', openModal1);
+    openButton2.addEventListener('click', openModal2);
+    openButton3.addEventListener('click', openModal3);
+    openButton4.addEventListener('click', openModal4);
+    openButton5.addEventListener('click', openModal5);
+} else if (window.location.pathname === '/about-us.html') {
+    openButton6.addEventListener('click', openModal6);
+    openButton7.addEventListener('click', openModal7);
+    openButton8.addEventListener('click', openModal8);
+    openButton9.addEventListener('click', openModal9);
+    openButton10.addEventListener('click', openModal10);
+
+}

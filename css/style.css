@@ -18635,106 +18635,10 @@ font-size: 24px;
 }
 /*Fin sección about us*/
 
-/*css de ventana modal*/
-
-/*Boton-Modal de la ventana modal  */
-.boton-modal {
-    padding: 5px;
-    background: rgba(255, 255, 255, 0.05);
-}
-.containerr .card-team .modal {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1000;  
-	background: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
-  
-.boton-modal label {
-    padding: 10px 15px;
-    background-color: #5488a3;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 300ms ease;
-}
-
-.boton-modal label:hover {
-    background-color: #185E83;
-}
-/*:::Fin Boton-Modal:::*/
-
-/*:::Ventana Modal::: */
-#btn-modal{
-    display: none;
-}
-.containerr-modal{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0; left: 0;
-    background-color: rgba(144, 148, 150, 0.8);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
-#btn-modal:checked ~ .containerr-modal{
-    display: flex;
-}
-.content-modal{
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 4px;
-}
-.content-modal h2{
-    margin-bottom: 15px;
-}
-.content-modal p{
-    padding: 15px 0px;
-    border-top: 1px solid #dbdbdb;
-    border-bottom: 1px solid #dbdbdb;
-}
-.content-modal .btn-cerrar{
-    width: 100%;
-    margin-top: 15px;
-    display: flex;
-    justify-content: flex-end;
-}
-.content-modal .btn-cerrar label{
-    padding: 7px 10px;
-    background-color: #5488a3;
-    color: #fff;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 300ms ease;
-}
-.content-modal .btn-cerrar label:hover{
-    background-color:#185E83;
-}
-.cerrar-modal{
-    width:100%;
-    height: 100vh;
-    position: absolute;
-    top:0; left: 0;
-    z-index: -1;
-}
-@media screen and (max-width:800px) {
-    .content-modal{
-        width: 90%;
-    }
-}
-/*:::Fin Ventana Modal:::*/
 
 
-/* prueba modal 2 */
+
+/* ventana modal css */
 
 .container-button{
 	display: flex;
@@ -18772,6 +18676,7 @@ font-size: 24px;
 }
 
 .window-container {
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfSuhfLGx-Y31bDSOxYy05pjQC999D96Im-w&usqp=CAU');
 	position: relative;
 	background-color: #fff;
 	width: 550px;
