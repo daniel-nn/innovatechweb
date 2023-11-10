@@ -23,7 +23,6 @@ const closeButtons = document.getElementsByClassName('close-button');
 
 const windowContainer = document.getElementById('window-container');
 
-
 const openModal1 = () => {
     windowBackground1.style.display = 'flex';
 }
@@ -61,16 +60,16 @@ const openModal10 = () => {
 //     windowBackground.style.display = 'none';
 //   }, 1000);
     
-    const closeWindow = () => {
-        for (const element of elementos) {
-            element.style.display = 'none'
-        }
-    };
-
-
-    for (let i = 0; i < closeButtons.length; i++) {
-        elementos[i].addEventListener('click', closeWindow)
+const closeWindow = () => {
+    for (const element of elementos) {
+        element.style.display = 'none'
     }
+};
+
+for (let i = 0; i < closeButtons.length; i++) {
+    elementos[i].addEventListener('click', closeWindow)
+}
+  
 // windowBackground.addEventListener('click', (e) => {
 //   if (e.target === windowBackground) {
 //     closeWindow();
@@ -78,12 +77,14 @@ const openModal10 = () => {
 // });
 
 if (window.location.pathname === '/about-us-es.html') {
+    console.log('se muestra la ventana en español')
     openButton1.addEventListener('click', openModal1);
     openButton2.addEventListener('click', openModal2);
     openButton3.addEventListener('click', openModal3);
     openButton4.addEventListener('click', openModal4);
     openButton5.addEventListener('click', openModal5);
 } else if (window.location.pathname === '/about-us.html') {
+    console.log('se muestra la ventana ingles')
     openButton6.addEventListener('click', openModal6);
     openButton7.addEventListener('click', openModal7);
     openButton8.addEventListener('click', openModal8);
