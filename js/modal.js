@@ -77,18 +77,15 @@ for (let i = 0; i < closeButtons.length; i++) {
 // });
 
 if (window.location.pathname === '/about-us-es.html') {
-    console.log('se muestra la ventana en español')
     openButton1.addEventListener('click', openModal1);
     openButton2.addEventListener('click', openModal2);
     openButton3.addEventListener('click', openModal3);
     openButton4.addEventListener('click', openModal4);
     openButton5.addEventListener('click', openModal5);
 } else if (window.location.pathname === '/about-us.html') {
-    console.log('se muestra la ventana ingles')
     openButton6.addEventListener('click', openModal6);
     openButton7.addEventListener('click', openModal7);
     openButton8.addEventListener('click', openModal8);
     openButton9.addEventListener('click', openModal9);
     openButton10.addEventListener('click', openModal10);
-
 }
