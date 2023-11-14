@@ -1,24 +1,24 @@
 
 .header{
-	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 71, 11, 0.3)), url(/images/index/Carrusel/carrousel1.jpg);
+	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 71, 11, 0.3)), url(./images/index/Carrusel/carrousel1.jpg);
 
 	
 }
 .header2{
-	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 71, 11, 0.3)), url(/images/index/Carrusel/carrousel2.jpg);
+	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 71, 11, 0.3)), url(./images/index/Carrusel/carrousel2.jpg);
 
 
 }
 .header3{
-	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(/images/index/Carrusel/carrousel3.jpeg);
+	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(./images/index/Carrusel/carrousel3.jpeg);
 
 }
 .header4{
-	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(/images/index/Carrusel/carrousel4.jpeg);
+	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(./images/index/Carrusel/carrousel4.jpeg);
 
 }
 .header5{
-	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(/images/index/Carrusel/carrousel5.jpg);
+	background:linear-gradient(0deg, rgba(43, 71, 24, 0.466), rgba(130, 59, 11, 0.3)), url(./images/index/Carrusel/carrousel5.jpg);
 
 }
 
