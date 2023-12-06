@@ -294,7 +294,16 @@ p {
     color: rgb(255, 255, 255);
 }
 
+.ov-btn-grow-skew:hover .miNavbarLink {
+  color: #fff; /* Cambiar el color de la fuente al pasar el ratón sobre el enlace */
+}
+.miNavbarLink a:hover .fondo-mas-info {
+  color: #fff; /* Cambiar el color de la fuente cuando el enlace está enfocado o al pasar el ratón sobre él */
+}
 
+.fondo-mas-info:hover .miNavbarLink {
+  color: #fff; /* Cambiar el color de la fuente al pasar el ratón sobre el enlace */
+}
 
 /*  */
 
