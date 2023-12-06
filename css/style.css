@@ -208,6 +208,95 @@ p {
 	transform: skewX(-45deg) scale(1, 1);
 	color: rgb(255, 255, 255);
   }
+  
+.fondo-servicios {
+    color: #d77a41; /* color de fuente */
+	 /* tamaño y color de borde */
+	padding: 9px 20px;
+	border-radius: 2px; /* redondear bordes */
+	position: relative;
+	z-index: 1;
+	/* overflow: hidden; */
+	/* display: inline-block; */
+}
+
+/* Estilos al pasar el ratón sobre el botón */
+.fondo-servicios:hover {
+   	color: #fff;/* color de fuente hover */
+	transform: scale(1.05);
+	transition: all ease-in 0.3s;
+}
+
+/* Efecto de fondo sesgado */
+.fondo-servicios::after {
+    content: "";
+	background: #d66d22; /* color de fondo hover */
+	position: absolute;
+	z-index: -1;
+
+	display: block;
+	left: -2%;
+	right: -2%;
+	color: rgb(252, 252, 252);
+	top: 0;
+	bottom: 0;
+	transform: skewX(-45deg) scale(0, 1);
+	transition: all 0.3s ease;
+	
+}
+
+/* Estilos al pasar el ratón sobre el botón con fondo sesgado */
+.fondo-servicios:hover::after {
+    transition: all 0.3s ease-out;
+	transform: skewX(-45deg) scale(1, 1);
+	color: rgb(255, 255, 255);
+}
+
+.fondo-mas-info {
+    color: #d77a41; /* color de fuente */
+    /* tamaño y color de borde */
+    padding: 9px 20px;
+    border-radius: 2px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    /* overflow: hidden; */
+    /* display: inline-block; */
+}
+
+/* Estilos al pasar el ratón sobre el botón */
+.fondo-mas-info:hover {
+    color: #fff;/* color de fuente hover */
+    transform: scale(1.05);
+    transition: all ease-in 0.3s;
+}
+
+/* Efecto de fondo sesgado */
+.fondo-mas-info::after {
+    content: "";
+    background: #d66d22; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+
+    display: block;
+    left: -15%;
+    right: -30%;
+    color: rgb(252, 252, 252);
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+}
+
+/* Estilos al pasar el ratón sobre el botón con fondo sesgado */
+.fondo-mas-info:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*  */
 
   .infoService {
     width: 140px;
@@ -226,8 +315,8 @@ p {
 }
 
 .infoService .icon {
-    margin-right: 200px; /* Margen a la derecha para el icono */
-    color: #ec720f; /* Color predeterminado del icono */
+    margin-right: 200px;
+    color: #ec720f; 
 }
 
 .infoService:hover {
@@ -2132,8 +2221,25 @@ img {
 }
 
 .img-responsive {
+	position: relative;
+	background-image: url("../images/about-us/somos.jpg");
+	background-size: cover;
 	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 10%;
+
 }
+
+.img-responsive-logo {
+	width: 100%;
+	 z-index: 100; 
+	 left: 20px; 
+	 top: 10px;
+	 width: 150px;
+}
+
+
 
 /*
 *
@@ -18169,7 +18275,16 @@ overflow: hidden;
 .texto-azul-claro {
 
 	color: rgb(173, 216, 230);
+   
+}
 
+@media (max-width: 767px) {
+   .texto-azul-claro {
+        color: rgb(50, 122, 138);
+    }
+    .texto-azul-claro:focus, .texto-gris:active {
+        color: #fff; 
+    }
 }
 
 .texto-naranja {
@@ -18185,17 +18300,24 @@ overflow: hidden;
 }
 
 .texto-gris {
-
 	color: #d7d7d7; 
+}
 
+@media (max-width: 767px) {
+   .texto-gris {
+        color: #000; 
+    }
+    .texto-gris:focus, .texto-gris:active {
+        color: #fff; 
+    }
 }
 
 .texto-negro {
-
 	color:#000
-
 }  
-
+.texto-naranja {
+	color: rgb(203, 109, 21);
+}
 /*Fin colores para algunos textos*/
 
 .slider .slide-track {
@@ -18799,13 +18921,24 @@ font-size: 24px;
 }
 
 .image-container {
-  width: 200px; /* Puedes ajustar el tamaño según tus necesidades */
-  height: 200px; /* Puedes ajustar el tamaño según tus necesidades */
-  overflow: hidden; /* Para recortar cualquier parte de la imagen que exceda el contenedor */
+  width: 200px; 
+  height: 200px;
+  overflow: hidden;
 }
 
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Puedes ajustar esto según tus necesidades (cover, contain, fill, etc.) */
+  object-fit: cover; 
+}
+
+.aboutcontainer {
+	display: flex; 
+	flex-wrap: wrap;
+	margin-left: 10%;
+}
+
+.developer {
+	border-radius: 50%;
+	
 }
