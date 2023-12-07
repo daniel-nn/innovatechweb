@@ -87,13 +87,52 @@ p {
 .IconWrapper{
 	height: 58px;
 	width: 58px;
+	
+}
+
+.iconWrapperHome {
+	height: 70px;
+	width: 60px;
+
+}
+
+.IconWrapperWifi {
+	height: 65px;
+	width: 60px;
+}
+
+.iconWrapperCamera {
+	height: 70px;
+	width: 60px;
+}
+
+.iconWrapperTechnicians {
+	height: 65px;
+	width: 60px;
+}
+
+#IconWrapperCarEs {
+	height: 70px;
+	width: 60px;
 }
 
 .icon-wrapper i {
   font-size: inherit;  /* Tamaño de fuente heredado de .icon-wrapper */
 }
 
+.iconMargin {
+	margin-top: -1%;
+}
 
+.IconTextMargin {
+	margin-bottom: 0%;
+}
+
+.IconParagraphMargin {
+	
+	margin-bottom: 15%;
+}
+	
 .card1:hover {
 	background:linear-gradient(0deg, rgba(57, 35, 12, 0.437), rgba(21, 13, 5, 0.635)), url(/images/index/services/services1.jpg);
 	
