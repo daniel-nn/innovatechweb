@@ -55,17 +55,7 @@ text-align:center;
 text-transform:none;
 margin-bottom:30px;
 }
-.section-head h4:before {
-content: '';
-width: 60px;
-height: 3px;
-background: #F57D00;
-position: absolute;
-left: -100px;
-bottom: -10px;
-right:0;  
-margin:0 auto;
-}
+
 .section-head h4 span {
 font-weight: 700;
 padding-bottom: 5px;
@@ -270,5 +260,23 @@ border-radius: 30px;
     transform: scale(0.9);
   }
   
+#TittleSolutions {
+	color: RGB(255, 195, 0);
+	opacity: 0.7999;
+}
+
+#TittleSolutions2 {
+	color: RGB(255, 195, 0);
+	opacity: 0.7999;
+}
+
+#TittleSolutions3 {
+	color: RGB(255, 195, 0);
+	opacity: 0.7999;
+}
+#TittleSolutions4 {
+	color: RGB(255, 195, 0);
+	opacity: 0.7999;
+}
 
  

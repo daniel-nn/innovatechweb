@@ -2274,7 +2274,7 @@ img {
 	position: relative;
 	background-image: url("../images/about-us/somos.jpg");
 	background-size: cover;
-	width: 100%;
+	width: 105%;
 	height: 100%;
 	overflow: hidden;
 	border-radius: 10%;
@@ -18342,10 +18342,14 @@ overflow: hidden;
 	color: #f06f00;
 
 }
+.TittleSolutions {
+	color: RGB(255, 195, 0);
+	opacity: 0.7999;
+}
+ 
+.texto-gris-claro {
 
-.texto-gri-claro {
-
-	color: rgb(154, 157, 171);
+	color: gray;
 
 }
 
