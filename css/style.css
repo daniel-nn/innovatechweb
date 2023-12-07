@@ -4661,8 +4661,9 @@ html img.quote-light-image {
 
 .thumbnail-minimal {
 	position: relative;
-	overflow: hidden;
-	display: block;
+    overflow: hidden;
+    display: block;
+    max-height: 300px;
 }
 
 .thumbnail-minimal::before {
@@ -4673,14 +4674,15 @@ html img.quote-light-image {
 
 .thumbnail-minimal-image {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	min-height: 100%;
-	min-width: 100%;
-	width: auto;
-	height: auto;
-	max-width: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: 100%;
 }
 
 @supports (object-fit: cover) {
@@ -18320,6 +18322,7 @@ overflow: hidden;
 /*Inicio colores para algunos textos*/
 
 .texto-footer{
+	font-size: 1.3rem;
 	color: rgb(175, 170, 190);
 }
 .texto-azul-claro {
@@ -18994,5 +18997,11 @@ font-size: 24px;
 
 .developer {
 	border-radius: 50%;
-	
 }
+
+.SecondOperationCenter{
+	font-size: 150%;
+	color: #000;
+	font-weight: bold;
+}
+
