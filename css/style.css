@@ -85,11 +85,13 @@ p {
 }
 
 .IconWrapper{
-	height: 50px;
-	width: 50px;
+	height: 58px;
+	width: 58px;
 }
 
-
+.icon-wrapper i {
+  font-size: inherit;  /* Tamaño de fuente heredado de .icon-wrapper */
+}
 
 
 .card1:hover {
