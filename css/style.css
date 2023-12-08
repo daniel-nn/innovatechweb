@@ -1987,8 +1987,8 @@ html .list-inline-md {
 
 html .list-inline-md > * {
 	margin-top: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 @media (min-width: 992px) {
@@ -18333,6 +18333,8 @@ overflow: hidden;
 .texto-footer{
 	font-size: 1.1rem;
 	color: rgb(175, 170, 190);
+	font-weight: 600;
+	letter-spacing: 2px;
 }
 .texto-azul-claro {
 
@@ -19014,3 +19016,19 @@ font-size: 24px;
 	font-weight: bold;
 }
 
+.navfooter {
+	margin-bottom: -3%;
+	display: flex;
+}
+
+.FooterContactSubTittle {
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 3px;
+	
+}
+.FooterContacttext {
+	font-size: 1.1rem;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
