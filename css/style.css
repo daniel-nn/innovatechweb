@@ -4399,6 +4399,15 @@ html img.quote-light-image {
 	flex-shrink: 0;
 }
 
+.quote-classic-avatar1 {
+	position: relative;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	flex-shrink: 0;
+}
+
 .quote-classic-avatar img {
 	position: absolute;
 	top: 50%;
@@ -18322,7 +18331,7 @@ overflow: hidden;
 /*Inicio colores para algunos textos*/
 
 .texto-footer{
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	color: rgb(175, 170, 190);
 }
 .texto-azul-claro {
