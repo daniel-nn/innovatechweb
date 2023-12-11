@@ -4562,7 +4562,6 @@ html img.quote-light-image {
 		margin-top: 20px;
 	}
 }
-
 /*
 *
 * Thumbnails
@@ -19033,3 +19032,18 @@ font-size: 24px;
 	font-weight: 300;
 	letter-spacing: 3px;
 }
+.service-background {
+  background: linear-gradient(0deg, rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.7)), url("/images/index/services.jpg");
+  padding: 100px 0px;
+  width: auto;
+  height: auto;
+
+}
+
+
+.service-text{
+	color: #fff;
+}
+
+
+
