@@ -18324,15 +18324,13 @@ overflow: hidden;
 /*Inicio colores para algunos textos*/
 
 .texto-footer{
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	color: rgb(175, 170, 190);
 	font-weight: 600;
 	letter-spacing: 2px;
 }
 .texto-azul-claro {
-
 	color: rgb(173, 216, 230);
-   
 }
 
 @media (max-width: 767px) {
@@ -18345,9 +18343,11 @@ overflow: hidden;
 }
 
 .texto-naranja {
-
 	color: #f06f00;
-
+}
+.texto-naranja-centro {
+	color: #f06f00;
+	text-align: center;
 }
 .TittleSolutions {
 	color: RGB(255, 195, 0);
@@ -18372,10 +18372,10 @@ overflow: hidden;
 }
 
 .texto-negro {
-	color:#000
+	color:#212121
 }  
 
-.texto-negrop {
+.texto-negrow {
 	color:#000;
 	font-weight: 500;
 }  
@@ -18749,12 +18749,13 @@ color: inherit;
 margin: 15px 10px;
 } */
 .containerr .card-team{
-	width: 280px;
-	height: 390px;
+	width: 230px;
+	height: 320px;
 	background: rgba(255, 255, 255, 0.05);
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 	border-radius: 15px;
 	margin: 2px 7px;
+	margin-top: 2%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -19051,6 +19052,18 @@ font-size: 24px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.design-backgroundt {
+	height: 100%;
+	
+    width: 100%;
+    min-height: 550px;
+    background:  url('../images/projects/fondo.jpg') center no-repeat;
+    background-size: cover;
+	overflow-y: auto;
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+
 .design-background {
     height: auto;
     width: 100%;
@@ -19060,20 +19073,42 @@ font-size: 24px;
 	overflow-y: auto;
 	background-position: center; 
 	background-repeat: no-repeat;
-	padding-top: 6%;
+	padding-top: 0%;
+}
+
+.design-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 3%;
 }
 
 .project-margin {
-	padding-bottom: 6%;
+	margin-top: 0%;
+	padding-bottom: auto;
 }
-
 
 .projectcard {
     position: relative;
     width: 300px;
     height: 400px;
-	margin-left: 20%;
-	margin-bottom: 6%;
+	margin-left: 10%;
+	margin-right: 14%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	z-index: 0;
+}
+.imgdomotica{
+	margin-top: 4%;
+	margin-left: 12%;
+	height: 320px;
+	width: 330px;
+	border-radius: 15%;
+}
+
+.margenes-project{
+	margin-top: 2%; 
+	margin-right: 7%
 }
 
 .projectcard .card_landing {
@@ -19084,20 +19119,27 @@ font-size: 24px;
     background: linear-gradient(transparent 80%, #000), var(--i);
     background-position: center;
     background-size: cover;
-    z-index: 100;
+    z-index: 10;
+	flex-wrap: wrap;
 }
 
 .projectcard .card_landing h6 {
-    position: absolute;
+   
+   position: absolute;
     bottom: 10px;
     left: 10px;
-    font-size: 25px;
+    right: 10px;
+    font-size: 24px; 
     color: #fff;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center; 
 }
 
 .projectcard .card_info {
     position: absolute;
-    width: 90%;
+    width: 85%;
     height: 90%;
     left: 0;
     bottom: 0;
@@ -19106,7 +19148,7 @@ font-size: 24px;
     margin: auto;
     padding: 15px;
     background: #fff;
-    z-index: 90;
+    z-index: 0;
     box-shadow: 0 5px 10px #000;
     transition: .5s;
 }
@@ -19124,6 +19166,7 @@ font-size: 24px;
     font-size: 20px;
     font-weight: 700;
     color: #e07e11;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .card_info .head .description {
@@ -19168,4 +19211,34 @@ font-size: 24px;
     background: #e07e11;
     display: block;
     margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .projectcard {
+        width: calc(50% - 5%); 
+        margin-left: 2.5%; 
+        margin-right: 2.5%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .projectcard {
+        width: 50%; 
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
+@media (max-width: 319px) {
+    .projectcard {
+        width: calc(50% - 5%); 
+        margin-left: 2.5%; 
+        margin-right: 2.5%; 
+    }
+}
+
+.separador-gris {
+	border: 1px solid gray; 
+	margin: 2%;
 }
