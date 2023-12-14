@@ -19081,45 +19081,31 @@ font-size: 24px;
     margin-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .projectcard {
-        width: calc(50% - 5%); 
-        margin-left: 2.5%; 
-        margin-right: 2.5%; 
+		padding-top:  5%;
+        padding-left: 10%;
+		margin-right: 10%;
     }
 }
 
 
-@media (max-width: 480px) {
-    .projectcard {
-        width: 50%; 
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
-}
-
-@media (max-width: 319px) {
-    .projectcard {
-        width: calc(50% - 5%); 
-        margin-left: 2.5%; 
-        margin-right: 2.5%; 
-    }
-}
 
 .separador-gris {
 	border: 1px solid gray; 
 	margin: 2%;
 }
 
-.imgcamara4{
+.imgcamaras{
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-	width: 30%;
-	height: auto;
-    max-width: 631px;
     border-radius: 10%;
-    margin-top: 1%;
 }
 
+@media (max-width: 1000px){
+	.imgcamara4{
+		margin-bottom: 5%;
+	}
+}
 
 .contenedorCel{
 	flex-wrap: wrap;
