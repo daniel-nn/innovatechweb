@@ -261,7 +261,9 @@ p {
 	/* display: inline-block; */
 }
 
-/* Estilos al pasar el ratón sobre el botón */
+
+
+
 .fondo-servicios:hover {
    	color: #fff;/* color de fuente hover */
 	transform: scale(1.05);
@@ -274,7 +276,6 @@ p {
 	background: #d66d22; /* color de fondo hover */
 	position: absolute;
 	z-index: -1;
-
 	display: block;
 	left: -2%;
 	right: -2%;
@@ -7758,7 +7759,6 @@ html:not(.tablet):not(.mobile) .profile-minimal-caption {
 .page {
 	position: relative;
 	overflow: hidden;
-	min-height: 100vh;
 }
 
 .page.fadeIn {
@@ -7812,6 +7812,7 @@ html.boxed body {
 
 .icon-flag{
 	cursor: pointer;
+	border-radius: 100%
 }
 .icon-flag:hover{
 
@@ -9491,6 +9492,22 @@ html:not(.lt-ie10) .not-animated {
 	animation-name: fadeInLeftSmall;
 }
 
+@keyframes fadeInRightSmall {
+	0% {
+		opacity: 0;
+		transform: translate3d(20px, 0, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.fadeInRightSmall  {
+	animation-name: fadeInRightSmall;
+}
+
+
 @keyframes fadeInUpSmall {
 	0% {
 		opacity: 0;
@@ -9504,6 +9521,21 @@ html:not(.lt-ie10) .not-animated {
 
 .fadeInUpSmall {
 	animation-name: fadeInUpSmall;
+}
+
+@keyframes fadeInDownSmall {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -20px, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInDownSmall {
+    animation-name: fadeInDownSmall;
 }
 
 @keyframes fadeSlideInDown {
@@ -9565,7 +9597,7 @@ html:not(.lt-ie10) .not-animated {
 	transition: 10.s all ease;
 	pointer-events: none;
 	backface-visibility: hidden;
-	
+	transition: 1.0s all ease;
 }
 
 .preloader::before, .preloader::after {
@@ -18195,9 +18227,11 @@ overflow: hidden;
     }
 }
 
-.texto-naranja {
-	color: #f06f00;
+.texto-naranjaprojects {
+	color: rgb(322, 127, 5);
+	padding-bottom: 1%;
 }
+
 .texto-naranja-centro {
 	color: #f06f00;
 	text-align: center;
@@ -18907,7 +18941,6 @@ font-size: 24px;
 
 .design-backgroundt {
 	height: 100%;
-	
     width: 100%;
     min-height: 550px;
     background:  url('../images/projects/fondo.jpg') center no-repeat;
@@ -18921,12 +18954,13 @@ font-size: 24px;
     height: auto;
     width: 100%;
 	min-height: 300px;
-    background: url('../images/Fondo.jpg') center no-repeat;
+    background: url('/images//Fondos/Fondo3.png') center no-repeat;
     background-size: cover;
 	overflow-y: auto;
 	background-position: center; 
 	background-repeat: no-repeat;
 	padding-top: 0%;
+	padding-bottom: 2%;
 }
 .imgdomotica{
 	margin-top: 4%;
@@ -18948,42 +18982,45 @@ font-size: 24px;
 	margin-top: 3%;
 }
 
-.project-margin {
-	margin-top: 0%;
-	padding-bottom: auto;
-}
 
 .projectcard {
     position: relative;
     width: 300px;
     height: 400px;
-	overflow: hidden;
+    overflow: hidden;
     margin-bottom: 5%;
     perspective: 2000px;
-	border-radius: 5%;
+    border-radius: 5%;
+    cursor: pointer;
 }
+
 .projectcard-inner {
     position: relative;
     width: 100%;
     height: 100%;
     transition: transform 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
     transform-style: preserve-3d;
-	border-radius: 5%;
+    border-radius: 5%;
 }
 
-.projectcard .card_landing {
+.projectcard:hover .projectcard-inner {
+    transform: rotateY(-180deg);
+}
+
+.projectcard .card_landing, .projectcard .card_info {
     position: absolute;
     width: 100%;
     height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5%;
+}
+
+.projectcard .card_landing {
     box-shadow: 0 5px 10px #000;
     background: linear-gradient(transparent 80%, #000), var(--i);
     background-position: center;
     background-size: cover;
-    backface-visibility: hidden; 
-	border-radius: 5%;
-	overflow: hidden;
 }
-
 .projectcard .card_landing h6 {
    
    position: absolute;
@@ -18999,20 +19036,15 @@ font-size: 24px;
 }
 
 .projectcard .card_info {
-    position: absolute;
-    width: 85%;
-    height: 90%;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    margin: auto;
     padding: 15px;
     background: #fff;
     box-shadow: 0 5px 10px #000;
-    backface-visibility: hidden; 
-    transform: rotateY(180deg); 
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 
 .projectcard .card_landing, .projectcard .card_info {
     position: absolute;
@@ -19035,7 +19067,20 @@ font-size: 24px;
     font-weight: 700;
     color: #e07e11;
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	text-align: center;
 }
+.card_info .content .title {
+    color: #e04011;
+	text-align: center;
+	margin-bottom: 25%;
+}
+
+.card_info .content p {
+	text-align: center;
+	margin-top:  -10%;
+	color: gray;
+}
+
 
 .card_info .head .description {
     display: flex;
@@ -19061,15 +19106,6 @@ font-size: 24px;
     margin-top: 15px;
 }
 
-.card_info .content .list {
-    padding: 10px 15px;
-}
-
-.card_info .content .list li {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-
 .card_info .action .btn {
     padding: 10px;
     color: #000000;
@@ -19093,10 +19129,18 @@ font-size: 24px;
 
 .separador-gris {
 	border: 1px solid gray; 
-	margin: 2%;
+	
+	margin-top: 4%;
+	margin-bottom: 4%;
 }
 
 .imgcamaras{
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+}
+
+.imgcitofono{
+	height: 200px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10%;
 }
@@ -19115,3 +19159,40 @@ font-size: 24px;
 	margin-top: 8%;
 }
 
+.iconimgcamera{
+	width: 10%;
+	height: 100%;
+	border-radius: 100%;
+	transition: transform 0.5s ease;
+	/* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.iconimgcamera:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.section-camera{
+	height: auto;
+    width: 100%;
+	min-height: 300px;
+    background: url('/images//Fondos/Fondo3turned.png') center no-repeat;
+    background-size: cover;
+	overflow-y: auto;
+	background-position: center; 
+	background-repeat: no-repeat;
+
+}
+
+.imgmapcamara{
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+    border-radius: 10%;
+	height: 80%;
+	width: 80%;
+	transition: transform 0.3s ease;
+}
+
+.imgmapcamara:hover{
+	cursor: pointer;
+	transform: scale(1,1.2);
+}
