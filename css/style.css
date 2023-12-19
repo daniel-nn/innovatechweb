@@ -31,7 +31,7 @@
   font-family: "Poppins", sans-serif;
 }
 section {
-  height: 100vh;
+  height: 5vh;
   width: 100%;
   display: grid;
   place-items: center;
@@ -112,7 +112,7 @@ p {
 }
 
 #IconWrapperCarEs {
-	height: 70px;
+	height: 60px;
 	width: 60px;
 }
 
@@ -251,25 +251,17 @@ p {
   }
   
 .fondo-servicios {
-    color: #d77a41; /* color de fuente */
-	 /* tamaño y color de borde */
-	padding: 9px 20px;
+	padding: 17px 20px;
 	border-radius: 2px; /* redondear bordes */
 	position: relative;
 	z-index: 1;
-	/* overflow: hidden; */
-	/* display: inline-block; */
 }
-
-
-
 
 .fondo-servicios:hover {
    	color: #fff;/* color de fuente hover */
 	transform: scale(1.05);
 	transition: all ease-in 0.3s;
 }
-
 /* Efecto de fondo sesgado */
 .fondo-servicios::after {
     content: "";
@@ -284,14 +276,21 @@ p {
 	bottom: 0;
 	transform: skewX(-45deg) scale(0, 1);
 	transition: all 0.3s ease;
-	
 }
-
 /* Estilos al pasar el ratón sobre el botón con fondo sesgado */
 .fondo-servicios:hover::after {
     transition: all 0.3s ease-out;
 	transform: skewX(-45deg) scale(1, 1);
 	color: rgb(255, 255, 255);
+}
+
+.fondo-servicios.show .dropdown-toggle {
+    color: #fff; /* Esto aplicará el color blanco cuando el dropdown esté activo */
+}
+
+/* Mantener la regla para hover para que no se vea afectada */
+.fondo-servicios:hover .dropdown-toggle {
+    color: #fff; /* Esto mantendrá el texto blanco al pasar el mouse */
 }
 
 .fondo-mas-info {
@@ -2825,18 +2824,17 @@ html .button.button-icon {
 	padding: 0 0 0 3px;
 }
 
-.btn-primary {
+.btn-light {
 	border-radius: 3px;
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	letter-spacing: .05em;
-	
 	transition: .33s;
 }
 
 
 
-.btn-primary:hover {
+.btn-light:hover {
 	color: #fff;
 	background: #000;
 	border-color: #000;
@@ -18223,14 +18221,19 @@ overflow: hidden;
         color: rgb(50, 122, 138);
     }
     .texto-azul-claro:focus, .texto-gris:active {
-        color: #fff; 
+        color: #000; 
     }
+}
+
+.texto-blanco {
+	color: white;
 }
 
 .texto-naranjaprojects {
 	color: rgb(322, 127, 5);
 	padding-bottom: 1%;
 }
+
 
 .texto-naranja-centro {
 	color: #f06f00;
@@ -19268,3 +19271,4 @@ font-size: 24px;
 .Surround-help-container-youtube{
 	padding-top: 5%;
 }
+

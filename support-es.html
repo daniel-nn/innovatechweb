@@ -11,7 +11,9 @@
   <link rel="icon" href="images/Logos/innovatech-solutions.png" type="image/x-icon">
   <link rel="stylesheet" type="text/css"
     href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800%7CPoppins:300,400,700">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css" id="main-styles-link">
   <script src="https://kit.fontawesome.com/ccb7c227e4.js" crossorigin="anonymous"></script>
@@ -104,24 +106,25 @@
                   <p class="texto-gris">Contacto</p>
                 </a>
               </li>
-              <li class="rd-nav-item  dropdown fondo-servicios">
-                <button class="miNavbarLink btn dropdown-toggle bg-transparent sm:text-white dropdown_services"
-                  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              <li class="rd-nav-item nav-item dropdown fondo-servicios">
+                <a class="nav-link dropdown-toggle texto-azul-claro" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <p class="texto-azul-claro">Servicios</p>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="/services-residenctial-es.html"
-                    style="font-style: normal; margin-right: 10px; display: flex; align-items: center;">
-                    <i class="fa fa-home" style="margin-right: 10px;"></i>
-                    <p class="texto-negro" style="margin: 0;">Servicios Residenciales</p>
-                  </a>
-                  <a class="dropdown-item" href="/services-commercial-es.html"
-                    style="font-style: normal; margin-right: 10px; display: flex; align-items: center;">
-                    <i class="fa fa-building" style="margin-right: 10px;"></i>
-                    <p class="texto-negro" style="margin: 0;">Servicios Comerciales</p>
-                  </a>
-                </div>
+                  Servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/services-residenctial-es.html">
+                      <i class="fa fa-home" style="margin-right: 10px;"></i>Servicios Residenciales
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/services-commercial-es.html"><i class="fa fa-building"
+                        style="margin-right: 10px;"></i>Servicios Comerciales</a>
+                  </li>
+                </ul>
               </li>
               <li class="rd-nav-item" style="margin-left: 20px;"><a href="/support.html"><img class="icon-flag"
                     style="width: 35px;" src="images/Logos/usa.png" alt=""></a><a style="margin-left: 10px;"
@@ -141,15 +144,15 @@
       <div class="container" style="padding: 50px 30px;">
         <div class="row">
           <div class="col-lg-6 wow fadeInLeft">
-            <img class="w-100 rounded-xl img-support" 
+            <img class="w-100 rounded-xl img-support"
               src="https://hubcity.kingzcourt.biz/ow_userfiles/plugins/oxstore/2018-04-15/origin_5ad42fd0039d3.jpg"
               alt="">
           </div>
           <div class="col-lg-6">
-            <h3 class=" text-gray-700 mt-3 wow fadeInRight">
+            <h3 class=" text-gray-700 mt-3 text-center wow fadeInRight">
               SOPORTE INNOVATECH
             </h3>
-            <p class="d-inline-block text-md font-weight-bold text-warning bg-info p-2 rounded-full wow fadeInRight">
+            <p class="wow fadeInRight text-center" style="font-weight: 700;">
               RECIBIR ASISTENCIA DE NUESTRO EQUIPO TECNICO
             </p>
             <p class="mt-3 text-gray-700 wow fadeInRight">
@@ -160,35 +163,48 @@
             <div style="display: flex;">
               <ul class="list-unstyled mt-4 align-items-center">
                 <li class="d-flex align-items-start">
-                  <i class="fa-solid fa-circle-check wow fadeInRight" data-wow-delay="0.2s" style="color: #e87d00; margin-top: 1%;"></i>
-                  <span class="ml-2 font-weight-medium text-gray-700 pb-2 wow fadeInRight" data-wow-delay="0.2s">Soporte TI</span>
+                  <i class="fa-solid fa-circle-check wow fadeInRight mr-2" data-wow-delay="0.2s"
+                    style="color: #e87d00; margin-top: 1%;padding-right: 2%;"></i>
+                  <span class="ml-2 font-weight-medium text-gray-700 pb-2 wow fadeInRight" data-wow-delay="0.2s">Soporte
+                    TI</span>
                 </li>
-                <li class="d-flex align-items-start">
-                  <i class="fa-solid fa-circle-check wow fadeInRight" style="color: #e87d00; margin-top: 2%;"></i>
-                  <span class="ml-2 font-weight-medium text-gray-700 pb-2 wow fadeInRight">Orientación y asesoramiento tecnico</span>
+                <li class="d-flex align-items-start pt-4">
+                  <i class="fa-solid fa-circle-check wow fadeInRight"
+                    style="color: #e87d00; margin-top: 2%; padding-right: 2%"></i>
+                  <span class="ml-2 font-weight-medium text-gray-700 pb-2 wow fadeInRight">Orientación y asesoramiento
+                    tecnico</span>
                 </li>
                 <li class="d-flex align-items-center">
-                  <i class="fa-solid fa-circle-check wow fadeInRight" style="color: #e87d00; font-size: 1.1rem; margin-bottom: 5%;"></i>
-                  <span class="ml-2 font-weight-medium text-gray-700 wow fadeInRight">Configuración de redes y conexiones</span>
+                  <i class="fa-solid fa-circle-check wow fadeInRight"
+                    style="color: #e87d00; font-size: 1.1rem; margin-bottom: 5%; padding-right: 2%"></i>
+                  <span class="ml-2 font-weight-medium text-gray-700 wow fadeInRight">Configuración de redes y
+                    conexiones</span>
                 </li>
               </ul>
               <ul class="list-unstyled mt-4 align-items-center">
                 <li class="d-flex align-items-center pb-2">
-                  <i class="fa-solid fa-circle-check wow fadeInRight" style="color: #e87d00;"></i>
+                  <i class="fa-solid fa-circle-check wow fadeInRight mb-4"
+                    style="color: #e87d00; padding-right: 2%"></i>
                   <span class="ml-2 font-weight-medium text-gray-700 wow fadeInRight">Asistencia a la instalación</span>
                 </li>
                 <li class="d-flex align-items-center pb-2">
-                  <i class="fa-solid fa-circle-check wow fadeInRight" style="color: #e87d00; margin-bottom: 10%;"></i>
-                  <span class="ml-2 font-weight-medium text-gray-700 wow fadeInRight">Configuración del dispositivo</span>
+                  <i class="fa-solid fa-circle-check wow fadeInRight"
+                    style="color: #e87d00; margin-bottom: 10%; padding-right: 2%"></i>
+                  <span class="ml-2 font-weight-medium text-gray-700 wow fadeInRight">Configuración del
+                    dispositivo</span>
                 </li>
                 <li class="d-flex align-items-center">
-                  <i class="fa-solid fa-circle-check wow fadeInRight" style="color: #e87d00; margin-bottom: 1%;"></i>
+                  <i class="fa-solid fa-circle-check wow fadeInRight"
+                    style="color: #e87d00; margin-bottom: 1%; padding-right: 2%"></i>
                   <span class="ml-2 font-weight-medium text-gray-700 wow fadeInRight">Asistencia personalizada</span>
                 </li>
               </ul>
             </div>
-            <a class="btn btn-primary mt-3 wow fadeInUpSmall" href="https://assist.innovatechcorp.net/login/join.jsp?language=en">Hablar
-              con soporte</a>
+            <div class="col-5 offset-md-3 mt-1">
+              <a class="btn btn-light mt-3 wow fadeInDown texto-naranja"
+                href="https://assist.innovatechcorp.net/login/join.jsp?language=en">Hablar
+                con soporte</a>
+            </div>
           </div>
         </div>
       </div>
@@ -334,7 +350,8 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/innovatech_projects/?hl=es"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/innovatech_projects/?hl=es"> <i
+                    class="fa-brands fa-instagram"></i></a>
               </li>
               <li>
                 <a href="https://www.tiktok.com/@innovatechsolutions"><i class="fa-brands fa-tiktok"></i></a>
@@ -374,8 +391,11 @@
   <!-- Global Mailform Output-->
   <div class="snackbars" id="form-output-global"></div>
   <!-- Javascript-->
-  <script src="js/core.min.js"></script>
-  <script src="js/script.js"></script>
+  <script src="/js/core.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
