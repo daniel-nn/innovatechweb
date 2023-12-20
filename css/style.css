@@ -2825,7 +2825,8 @@ html .button.button-icon {
 }
 
 .btn-light {
-	border-radius: 3px;
+	background-color: rgb(192, 207, 214);
+	border: none;
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	letter-spacing: .05em;
@@ -18275,7 +18276,7 @@ overflow: hidden;
 	font-weight: 400;
 }
 .texto-naranja {
-	color: rgb(203, 109, 21);
+	color: #f06f00;
 }
 /*Fin colores para algunos textos*/
 
@@ -18942,7 +18943,7 @@ font-size: 24px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.design-backgroundt {
+.design-background-proyect {
 	height: 100%;
     width: 100%;
     min-height: 550px;
@@ -19272,3 +19273,11 @@ font-size: 24px;
 	padding-top: 5%;
 }
 
+.control-acces-background-header {
+	height: 400px;
+	background:  url('../images/projects/control-acces/brazo-de-barrera-de-vehiculos.jpg') center no-repeat;
+    background-size: cover;
+	overflow-y: auto;
+	background-position: center; 
+	background-repeat: no-repeat;
+}
