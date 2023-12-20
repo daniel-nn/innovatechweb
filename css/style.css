@@ -19275,9 +19275,20 @@ font-size: 24px;
 
 .control-acces-background-header {
 	height: 400px;
-	background:  url('../images/projects/control-acces/brazo-de-barrera-de-vehiculos.jpg') center no-repeat;
+	background:  url('../images/projects/control-acces/header.png') center no-repeat;
     background-size: cover;
 	overflow-y: auto;
 	background-position: center; 
 	background-repeat: no-repeat;
+}
+
+.Img-Control-Acces-lateral{
+	height: 400px;
+	 width: auto;
+}
+
+.Img-Control-Acces-Point {
+	border: none;
+	border-radius: 10%;
+	box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4);
 }
