@@ -31,7 +31,7 @@
   font-family: "Poppins", sans-serif;
 }
 section {
-  height: 5vh;
+  height: 70vh;
   width: 100%;
   display: grid;
   place-items: center;
@@ -18217,7 +18217,7 @@ overflow: hidden;
 	color: rgb(173, 216, 230);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
    .texto-azul-claro {
         color: rgb(50, 122, 138);
     }
@@ -18253,7 +18253,7 @@ overflow: hidden;
 	color: #d7d7d7; 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
    .texto-gris {
         color: #000; 
     }
@@ -19291,4 +19291,8 @@ font-size: 24px;
 	border: none;
 	border-radius: 10%;
 	box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.margin-banderas{
+	margin-left: 20px;
 }
