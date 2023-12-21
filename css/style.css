@@ -31,7 +31,7 @@
   font-family: "Poppins", sans-serif;
 }
 section {
-  height: 70vh;
+  height: auto;
   width: 100%;
   display: grid;
   place-items: center;
@@ -49,7 +49,7 @@ section {
 }
 .card {
   width: 100%;
-height: 95%;
+  height: 95%;
   padding: 2em 1.5em;
   background: linear-gradient(#ffffff 50%, #f56126 50%);
   background-size: 100% 200%;
@@ -2273,7 +2273,7 @@ img {
 
 .img-responsive {
 	position: relative;
-	background-image: url("../images/about-us/somos.jpg");
+	background-image: url("/images/about-us/somos.jpg");
 	background-size: cover;
 	width: 105%;
 	height: 100%;
@@ -13726,6 +13726,11 @@ button.swiper-pagination-bullet {
 	bottom: 10px;
 	border-bottom: 1px solid #e8e9ee;
 }
+  
+
+.margin-banderas{
+	margin-left: 20px;
+}
 
 .isotope-filters-list li {
 	display: inline-block;
@@ -18267,6 +18272,7 @@ overflow: hidden;
 
 .texto-negrow {
 	color:#000;
+	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 }  
 
@@ -18487,7 +18493,7 @@ color: inherit;
 
 .blog-card .description h1, .blog-card .description h2 {
 
-	font-family: Poppins, sans-serif;
+	font-family: "Poppins", sans-serif;
 
 }
 
@@ -18526,7 +18532,7 @@ color: inherit;
 .blog-card .description .read-more a:after {
 
 	content: "\f061";
-	font-family: FontAwesome;
+	font-family: "Poppins", sans-serif;
 	margin-left: -10px;
 	opacity: 0;
 	vertical-align: middle;
@@ -18713,10 +18719,18 @@ opacity: 1;
 .containerr .card-team .sci li a{
 font-size: 24px;
 }
+
+.aboutcontainer {
+	display: flex; 
+	flex-wrap: wrap;
+	margin-left: 1%;
+}
+
+.developer {
+	border-radius: 50%;
+}
+
 /*Fin sección about us*/
-
-
-
 
 /* ventana modal css */
 
@@ -18800,6 +18814,10 @@ font-size: 24px;
 	fill: rgb(54, 54, 54);
 }
 
+/* fin css de la ventana modal */
+
+/*Css de la posible seccion de logros*/
+
 .contenedor {
 	width: 90%;
 	max-width: 1000px;
@@ -18878,33 +18896,17 @@ font-size: 24px;
 	height: 26px;
 }
 
-.image-container {
-  width: 200px; 
-  height: 200px;
-  overflow: hidden;
-}
 
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-}
 
-.aboutcontainer {
-	display: flex; 
-	flex-wrap: wrap;
-	margin-left: 1%;
-}
 
-.developer {
-	border-radius: 50%;
-}
 
 .SecondOperationCenter{
 	font-size: 150%;
 	color: #000;
 	font-weight: bold;
 }
+
+/* css footer */
 
 .navfooter {
 	margin-bottom: -3%;
@@ -18922,8 +18924,11 @@ font-size: 24px;
 	font-weight: 300;
 	letter-spacing: 3px;
 }
+
+/* fin del css implementado en nuevo footer */
+
 .service-background {
-  background: linear-gradient(0deg, rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.7)), url("/images/index/services.jpg");
+  background: linear-gradient(0deg, rgba(40, 40, 40, 0.8), rgba(40, 40, 40, 0.8)), url("/images/index/services.jpg");
   padding: 100px 0px;
   width: auto;
   height: auto;
@@ -18942,11 +18947,15 @@ font-size: 24px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Inicio del css de las secciones de los proyectos */
+
+/* Inicio Css de la pagina proyectos */
+
 .design-background-proyect {
 	height: 100%;
     width: 100%;
     min-height: 550px;
-    background:  url('../images/projects/fondo.jpg') center no-repeat;
+    background:  url('/images/projects/fondo.jpg') center no-repeat;
     background-size: cover;
 	overflow-y: auto;
 	background-position: center; 
@@ -19124,13 +19133,18 @@ font-size: 24px;
 
 .card_info .action .btn {
     padding: 10px;
-    color: #000000;
+    color: white;
     width: 100%;
     text-decoration: none;
     text-align: center;
-    background: #e07e11;
+    background: rgb(240, 111, 0);
     display: block;
     margin-top: 10px;
+}
+
+.card_info .action .btn:hover {
+	color: white;
+	background: #000000;
 }
 
 @media (max-width: 1000px) {
@@ -19141,6 +19155,9 @@ font-size: 24px;
     }
 }
 
+/* fin css de la pagina de proyectos */
+
+/* inicio css de el proyecto camaras */
 
 .separador-gris {
 	border: 1px solid gray; 
@@ -19168,6 +19185,8 @@ font-size: 24px;
 .contenedorCel{
 	flex-wrap: wrap;
 }
+
+
 
 .marginiconscamera{
 	margin-top: 8%;
@@ -19224,10 +19243,13 @@ font-size: 24px;
 	transform: scale(1,1.2);
 }
 
+/* fin css seccion de camaras */
+
+/* inicio css control de acceso  */
 
 .surround-background {
 	height: 520px;
-    background:  url('../images/projects/surround-sound/Project.jpg') center no-repeat;
+    background:  url('/images/projects/surround-sound/Project.jpg') center no-repeat;
     background-size: cover;
 	overflow-y: auto;
 	background-position: center; 
@@ -19272,9 +19294,13 @@ font-size: 24px;
 	padding-top: 5%;
 }
 
+/* fin css sonido envolvente */
+
+/* inicio css de control de acceso */
+
 .control-acces-background-header {
 	height: 400px;
-	background:  url('../images/projects/control-acces/header.png') center no-repeat;
+	background:  url('/images/projects/control-acces/header.png') center no-repeat;
     background-size: cover;
 	overflow-y: auto;
 	background-position: center; 
@@ -19291,7 +19317,35 @@ font-size: 24px;
 	border-radius: 10%;
 	box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4);
 }
+/* fin css de la sección control de acceso */
 
-.margin-banderas{
-	margin-left: 20px;
+/* inicio css de la sección de fibra optica */
+
+.fiber-background-header {
+	
+	padding-top: 29%;
+	background:  url('/images/projects/fiber-optic/header.png') center no-repeat;
+    background-size: cover;
+	overflow-y: auto;
+	background-position: center; 
+	background-repeat: no-repeat;
 }
+
+.img-fiber-optic-circle {
+	border-radius: 100%;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-fiber-optic-shadow-left {
+	border-radius: 10%;
+	box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-fiber-optic-redes2 {
+	border-radius: 10%;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* fin css sección fibra optica */
+
+/* fin css los proyectos */
