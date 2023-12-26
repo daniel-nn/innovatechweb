@@ -7808,14 +7808,7 @@ html.boxed body {
 	z-index: 1080;
 }
 
-.icon-flag{
-	cursor: pointer;
-	border-radius: 100%
-}
-.icon-flag:hover{
 
-transform: scale(1.2);
-}
 
 /*
 *
@@ -12054,6 +12047,7 @@ html.rd-navbar-fixed-linked .page {
 * Swiper
 */
 .swiper-container {
+	
 	position: relative;
 	display: flex;
 	margin: 0 auto;
@@ -13730,6 +13724,21 @@ button.swiper-pagination-bullet {
 
 .margin-banderas{
 	margin-left: 20px;
+}
+
+.margen-bandera-Espapaña-Navbar {
+	margin-left: 10px;
+}
+
+.icon-flag{
+	cursor: pointer;
+	border-radius: 100%;
+	width: 35px;
+	
+}
+.icon-flag:hover{
+
+transform: scale(1.2);
 }
 
 .isotope-filters-list li {
@@ -19103,7 +19112,7 @@ font-size: 24px;
 .card_info .content p {
 	text-align: center;
 	margin-top:  -10%;
-	color: gray;
+	
 }
 
 
@@ -19205,29 +19214,14 @@ font-size: 24px;
 	transform: scale(1.2);
 }
 
-.iconimgparlante{
-	width: 10%;
-	height: 100%;
-	border-radius: 0%;
-	transition: transform 0.5s ease;
-	/* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
-}
-
-.iconimgparlante:hover {
-	cursor: pointer;
-	transform: scale(1.2);
-}
-
 .section-fondo3turned{
 	height: auto;
-    width: 100%;
+    width: auto;
 	min-height: 300px;
     background: url('/images//Fondos/Fondo3turned.png') center no-repeat;
     background-size: cover;
-	overflow-y: auto;
 	background-position: center; 
 	background-repeat: no-repeat;
-
 }
 
 .imgmapcamara{
@@ -19238,20 +19232,16 @@ font-size: 24px;
 	transition: transform 0.3s ease;
 }
 
-.imgmapcamara:hover{
-	cursor: pointer;
-	transform: scale(1,1.2);
-}
+
 
 /* fin css seccion de camaras */
 
 /* inicio css Sonido envolvente */
 
 .surround-background {
-	height: 520px;
+	padding-top: 30%;
     background:  url('/images/projects/surround-sound/Project.jpg') center no-repeat;
     background-size: cover;
-	overflow-y: auto;
 	background-position: center; 
 	background-repeat: no-repeat;
 }
@@ -19273,80 +19263,29 @@ font-size: 24px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 	height: 90%;
 	width: 90%;
+	/* max-height: 90%;
+	  max-width: 90%; */
 }
 
-.Surround-image-media{
-	
+.iconimgparlante{
+	width: 10%;
+	height: 100%;
+	border-radius: 0%;
+	transition: transform 0.5s ease;
+	/* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
 }
 
-@media (max-width: 754px) {
-    .Surround-image-media img {
-        margin-top: 4%;
-	}
+.iconimgparlante:hover {
+	cursor: pointer;
+	transform: scale(1.2);
 }
 
-.Surroung-img-antes {
-	margin-top: 7%; 
-	height: 250px;
-}
 
 .Surround-help-container-youtube{
 	padding-top: 5%;
 }
 
 /* fin css sonido envolvente */
-
-/* inicio css de control de acceso */
-
-.control-acces-background-header {
-	height: 450px;
-	background:  url('/images/projects/control-acces/header5.png') center no-repeat;
-    background-size: cover;
-	overflow-y: auto;
-	background-position: center 25%; 
-	background-repeat: no-repeat;
-}
-
-.Img-Control-Acces-lateral{
-	height: 400px;
-	 width: auto;
-}
-
-.Img-Control-Acces-Point {
-	border: none;
-	border-radius: 5%;
-	box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4);
-}
-/* fin css de la sección control de acceso */
-
-/* inicio css de la sección de fibra optica */
-
-.fiber-background-header {
-	
-	padding-top: 29%;
-	background:  url('/images/projects/fiber-optic/header.png') center no-repeat;
-    background-size: cover;
-	overflow-y: auto;
-	background-position: center; 
-	background-repeat: no-repeat;
-}
-
-.img-fiber-optic-circle {
-	border-radius: 100%;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.img-fiber-optic-shadow-left {
-	border-radius: 10%;
-	box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-.img-fiber-optic-redes2 {
-	border-radius: 10%;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* fin css sección fibra optica */
 
 /* fin css los proyectos */
 
@@ -19375,4 +19314,3 @@ font-size: 24px;
 	color: #dec169 ;
 	font-style: normal;
 }
-

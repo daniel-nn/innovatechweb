@@ -1,0 +1,22 @@
+.fiber-background-header {
+	padding-top: 29%;
+	background:  url('/images/projects/fiber-optic/header.png') center no-repeat;
+    background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+
+.img-fiber-optic-circle {
+	border-radius: 100%;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-fiber-optic-shadow-left {
+	border-radius: 10%;
+	box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-fiber-optic-redes2 {
+	border-radius: 10%;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
