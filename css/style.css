@@ -18370,6 +18370,7 @@ font-family: 'Montserrat', sans-serif;
 border-radius: 5px;
 overflow: hidden;
 z-index: 0;
+width: 100%;
 
 }
 
@@ -18488,7 +18489,7 @@ color: inherit;
 	background: #fff;
 	position: relative;
 	z-index: 1;
-
+	
 }
 
 .blog-card .description h1, .blog-card .description h2 {
@@ -18555,7 +18556,6 @@ color: inherit;
 }
 
 .blog-card p:first-of-type {
-
 	margin-top: 1.25rem;
 }
 
@@ -19245,7 +19245,7 @@ font-size: 24px;
 
 /* fin css seccion de camaras */
 
-/* inicio css control de acceso  */
+/* inicio css Sonido envolvente */
 
 .surround-background {
 	height: 520px;
@@ -19299,11 +19299,11 @@ font-size: 24px;
 /* inicio css de control de acceso */
 
 .control-acces-background-header {
-	height: 400px;
-	background:  url('/images/projects/control-acces/header.png') center no-repeat;
+	height: 450px;
+	background:  url('/images/projects/control-acces/header5.png') center no-repeat;
     background-size: cover;
 	overflow-y: auto;
-	background-position: center; 
+	background-position: center 25%; 
 	background-repeat: no-repeat;
 }
 
@@ -19314,7 +19314,7 @@ font-size: 24px;
 
 .Img-Control-Acces-Point {
 	border: none;
-	border-radius: 10%;
+	border-radius: 5%;
 	box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.4);
 }
 /* fin css de la sección control de acceso */
@@ -19349,3 +19349,30 @@ font-size: 24px;
 /* fin css sección fibra optica */
 
 /* fin css los proyectos */
+
+/* seccion de oficinas/branches index */
+
+.branches-background {
+	background-image: url(/images/Fondos/Fondo.jpg); 
+	background-size: cover; 
+	background-repeat: no-repeat; height: auto;
+}
+
+/* Fin branches  */
+
+/* sección en el index de ¡COMENCEMOS!/let'start */
+
+.start-background {
+	margin-top: 0px;
+	background:linear-gradient(0deg, rgba(255, 255, 255, 0.767), rgba(24, 24, 24, 0.685)) ,url('/images/contact.jpg');
+    background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;height: 400px;
+}
+
+.texto-start {
+	font-weight: bold;
+	color: #dec169 ;
+	font-style: normal;
+}
+
