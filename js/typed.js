@@ -47,7 +47,10 @@ const pageConfigurations = {
             selector: '.comencemos',
             strings: ["<i class='texto-start'>¡Comencemos!</i>", "<i class='texto-start'>¡Empieza tu viaje!</i>"]
         },
-
+        {
+            selector: '.somos',
+            strings: ["<i>Somos Innovatech</i>'", "<i>Somos Innovatech</i>"]
+        }
     ]
     //  configuraciones para otras rutas 
 };

@@ -1271,6 +1271,39 @@
 			lazyInit( plugins.maps, initMaps );
 		}
 
+		//footer en
+		$(document).ready(function () {
+
+			function loadDynamicContentAndInitGallery(language) {
+				var url = language === 'en' ? '/html/footer-en.html' : '/html/footer-es.html';
+
+				$.ajax({
+					url: url,
+					method: 'GET',
+					success: function (data) {
+						var footerId = language === 'en' ? '#dynamic-footer-content-en' : '#dynamic-footer-content-es';
+						$(footerId).html(data);
+
+						initLightGallery(footerId);
+					},
+					error: function (error) {
+						console.error('Error al cargar el contenido:', error);
+					}
+				});
+			}
+
+			function initLightGallery(footerId) {
+				$(footerId + ' [data-lightgallery="group"]').lightGallery({
+					selector: '.thumbnail-minimal'
+				});
+			}
+
+			// Carga el contenido dinámico en inglés y español
+			loadDynamicContentAndInitGallery('en');
+			loadDynamicContentAndInitGallery('es');
+		});
+
+		
 	});
 }());
 

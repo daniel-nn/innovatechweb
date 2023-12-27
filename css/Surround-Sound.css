@@ -1,0 +1,46 @@
+.surround-background {
+	padding-top: 30%;
+    background:  url('/images/projects/surround-sound/Project.jpg') center no-repeat;
+    background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+}
+
+.Surround-video-Support {
+	border-radius: 5%; 
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.Surround-projectimg{
+	height: 70%;
+	width: 50%;
+	border-radius: 5%; 
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.Surround-project-images{
+	border-radius: 5%; 
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	height: 90%;
+	width: 90%;
+	/* max-height: 90%;
+	  max-width: 90%; */
+}
+
+.iconimgparlante{
+	width: 10%;
+	height: 100%;
+	border-radius: 0%;
+	transition: transform 0.5s ease;
+	/* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+}
+
+.iconimgparlante:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+
+.Surround-help-container-youtube{
+	padding-top: 5%;
+}

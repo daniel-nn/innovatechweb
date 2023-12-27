@@ -1,0 +1,35 @@
+.Lista-Contacto-Footer {
+	display: flex; 
+	flex-direction: row;
+	margin: 10px;
+	align-items: center;
+}
+
+.Lista-Contacto-Footer i {
+	margin-right: 10px;
+	font-size: 25px;
+}
+
+.Span-lista-Contacto {
+	display: flex;
+	flex-direction: column;
+
+}
+
+.navfooter {
+	margin-bottom: -3%;
+	display: flex;
+}
+
+.FooterContactSubTittle {
+	font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 3px;
+	
+}
+.FooterContacttext {
+	font-size: 1.1rem;
+	font-weight: 300;
+	letter-spacing: 3px;
+}
+
