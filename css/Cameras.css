@@ -53,3 +53,15 @@
 	width: 80%;
 	transition: transform 0.3s ease;
 }
+
+@media (max-width: 754px){
+	.imgmapcamara {
+		margin-bottom: 10%;
+	}
+}
+
+@media (min-width: 754px){
+	.imgmapcamara {
+		margin-bottom: 10%;
+	}
+}

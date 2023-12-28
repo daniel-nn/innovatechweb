@@ -1303,7 +1303,6 @@
 			loadDynamicContentAndInitGallery('es');
 		});
 
-		
 	});
 }());
 
