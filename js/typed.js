@@ -32,7 +32,7 @@ const pageConfigurations = {
         },
         {
             selector: '.we-are',
-            strings: ['<i>We are innovatech</i>', '<i>We are innovatech</i>']
+            strings: ['<i>We are Innovatech</i>', '<i>We are Innovatech</i>']
         }
     ],
     '/': [
